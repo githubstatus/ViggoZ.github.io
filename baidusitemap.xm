@@ -25,6 +25,66 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/04/06/Viggo-Z-2016%20-%20%E5%89%AF%E6%9C%AC%20(3)/</loc>
+    <lastmod>2016-04-06T12:20:06.000Z</lastmod>
+    <data>
+        <display>
+        <title>Viggo.Z 2016</title>
+        <pubTime>2016-04-06T08:20:06.000Z</pubTime>
+        
+        <tag>test</tag>
+         
+         
+           
+             
+              <breadCrumb title="文章" url="http://yoursite.com/categories/%E6%96%87%E7%AB%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/04/06/Viggo-Z-2016%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC%20(3)/</loc>
+    <lastmod>2016-04-06T12:20:06.000Z</lastmod>
+    <data>
+        <display>
+        <title>Viggo.Z 2016</title>
+        <pubTime>2016-04-06T08:20:06.000Z</pubTime>
+        
+        <tag>test</tag>
+         
+         
+           
+             
+              <breadCrumb title="文章" url="http://yoursite.com/categories/%E6%96%87%E7%AB%A0/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/04/06/Viggo-Z-2016%20-%20%E5%89%AF%E6%9C%AC/</loc>
+    <lastmod>2016-04-06T12:20:06.000Z</lastmod>
+    <data>
+        <display>
+        <title>Viggo.Z 2016</title>
+        <pubTime>2016-04-06T08:20:06.000Z</pubTime>
+        
+        <tag>pic</tag>
+         
+         
+           
+             
+              <breadCrumb title="摄影" url="http://yoursite.com/categories/%E6%91%84%E5%BD%B1/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/04/06/Viggo-Z-2016%20-%20%E5%89%AF%E6%9C%AC%20(5)/</loc>
     <lastmod>2016-04-06T12:20:06.000Z</lastmod>
     <data>
@@ -65,7 +125,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/04/06/Viggo-Z-2016%20-%20%E5%89%AF%E6%9C%AC%20-%20%E5%89%AF%E6%9C%AC%20(3)/</loc>
+    <loc>http://yoursite.com/2016/04/06/Viggo-Z-2016%20-%20%E5%89%AF%E6%9C%AC%20(4)/</loc>
     <lastmod>2016-04-06T12:20:06.000Z</lastmod>
     <data>
         <display>
@@ -89,91 +149,16 @@
     <lastmod>2016-04-06T12:20:06.000Z</lastmod>
     <data>
         <display>
-        <title>Viggo.Z 2016</title>
+        <title>义乌市科技创业园1.0_Viggo.Z</title>
         <pubTime>2016-04-06T08:20:06.000Z</pubTime>
         
-        <tag>test</tag>
+        <tag>logo</tag>
          
          
            
              
-              <breadCrumb title="文章" url="http://yoursite.com/categories/%E6%96%87%E7%AB%A0/"/>
+              <breadCrumb title="Design" url="http://yoursite.com/categories/Design/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/04/06/Viggo-Z-2016%20-%20%E5%89%AF%E6%9C%AC%20(4)/</loc>
-    <lastmod>2016-04-06T12:20:06.000Z</lastmod>
-    <data>
-        <display>
-        <title>Viggo.Z 2016</title>
-        <pubTime>2016-04-06T08:20:06.000Z</pubTime>
-        
-        <tag>test</tag>
-         
-         
-           
-             
-              <breadCrumb title="文章" url="http://yoursite.com/categories/%E6%96%87%E7%AB%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/04/06/Viggo-Z-2016%20-%20%E5%89%AF%E6%9C%AC%20(3)/</loc>
-    <lastmod>2016-04-06T12:20:06.000Z</lastmod>
-    <data>
-        <display>
-        <title>Viggo.Z 2016</title>
-        <pubTime>2016-04-06T08:20:06.000Z</pubTime>
-        
-        <tag>test</tag>
-         
-         
-           
-             
-              <breadCrumb title="文章" url="http://yoursite.com/categories/%E6%96%87%E7%AB%A0/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/04/06/Viggo-Z-2016%20-%20%E5%89%AF%E6%9C%AC/</loc>
-    <lastmod>2016-04-06T12:20:06.000Z</lastmod>
-    <data>
-        <display>
-        <title>Viggo.Z 2016</title>
-        <pubTime>2016-04-06T08:20:06.000Z</pubTime>
-        
-        <tag>pic</tag>
-         
-         
-           
-             
-              <breadCrumb title="摄影" url="http://yoursite.com/categories/%E6%91%84%E5%BD%B1/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/04/06/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(2)/</loc>
-    <lastmod>2016-04-05T15:12:25.644Z</lastmod>
-    <data>
-        <display>
-        <title>Hello World</title>
-        <pubTime>2016-04-06T13:15:52.592Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
@@ -186,6 +171,21 @@
         <display>
         <title>Hello World</title>
         <pubTime>2016-04-06T13:18:28.229Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/04/06/hello-world%20-%20%E5%89%AF%E6%9C%AC%20(2)/</loc>
+    <lastmod>2016-04-05T15:12:25.644Z</lastmod>
+    <data>
+        <display>
+        <title>Hello World</title>
+        <pubTime>2016-04-06T13:15:52.592Z</pubTime>
         
          
            
