@@ -430,6 +430,24 @@ button {
     opacity: 0.1;
   }
 }
+#ds-thread #ds-reset .ds-powered-by {
+  display: none;
+}
+#ds-thread #ds-reset .ds-sort {
+  display: none;
+}
+#ds-service-link ds-renren {
+  display: none;
+}
+#ds-comments-tab-duoshuo ds-current {
+  display: none;
+}
+#ds-reset .ds-renren {
+  display: none;
+}
+#ds-thread #ds-reset .ds-login-buttons .ds-more-services {
+  display: none;
+}
 .site-footer {
   background: #eee;
   overflow: hidden;
