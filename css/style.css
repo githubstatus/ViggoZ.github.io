@@ -461,6 +461,9 @@ button {
 }
 .site-info a {
   color: #999;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 23px;
 }
 .site-info a:hover {
   color: #ff6347;
