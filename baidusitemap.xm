@@ -4,14 +4,14 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/04/13/2016-04-13-%E5%85%B3%E4%BA%8E%E8%AF%B7%E5%81%B7%E8%B5%B0%E6%B5%B7%E6%8A%A5/</loc>
-    <lastmod>2016-05-04T16:06:43.289Z</lastmod>
+    <loc>http://yoursite.com/2016/04/17/2016-04-17-%E8%99%8E%E9%97%A8%E5%A4%A7%E6%A1%A5/</loc>
+    <lastmod>2016-05-04T16:18:42.958Z</lastmod>
     <data>
         <display>
-        <title>读：请偷走海报</title>
-        <pubTime>2016-04-12T17:35:34.000Z</pubTime>
+        <title>拍：虎门大桥上</title>
+        <pubTime>2016-04-17T15:48:02.000Z</pubTime>
         
-        <tag>Reading</tag>
+        <tag>Photo</tag>
          
          
            
@@ -24,8 +24,46 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/04/20/2016-04-20-%E5%8E%9F%E7%A0%94%E5%93%89%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%882%EF%BC%89/</loc>
+    <lastmod>2016-05-04T16:17:43.751Z</lastmod>
+    <data>
+        <display>
+        <title>记：《为什么设计》(2)</title>
+        <pubTime>2016-04-20T14:27:29.000Z</pubTime>
+        
+        <tag>Writing</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/05/04/2016-05-04-%E5%85%B3%E4%BA%8E%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%85%B3%E8%81%8C%E4%B8%9A/</loc>
+    <lastmod>2016-05-04T16:11:50.109Z</lastmod>
+    <data>
+        <display>
+        <title>2016-05-04-关于用户体验设计相关职业</title>
+        <pubTime>2016-05-04T12:56:17.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="2016年5月" url="http://yoursite.com/categories/2016%E5%B9%B45%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/04/09/2016-04-09-%E5%B9%BF%E5%B7%9E%E7%B4%AB%E8%8D%86%E8%8A%B1/</loc>
-    <lastmod>2016-05-04T16:05:58.782Z</lastmod>
+    <lastmod>2016-05-04T16:11:16.465Z</lastmod>
     <data>
         <display>
         <title>拍：广州紫荆花</title>
@@ -44,32 +82,14 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/05/04/2016-05-04-%E5%85%B3%E4%BA%8E%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%85%B3%E8%81%8C%E4%B8%9A/</loc>
-    <lastmod>2016-05-04T16:04:58.597Z</lastmod>
+    <loc>http://yoursite.com/2016/04/13/2016-04-13-%E5%85%B3%E4%BA%8E%E8%AF%B7%E5%81%B7%E8%B5%B0%E6%B5%B7%E6%8A%A5/</loc>
+    <lastmod>2016-05-04T16:11:14.945Z</lastmod>
     <data>
         <display>
-        <title>2016-05-04-关于用户体验设计相关职业</title>
-        <pubTime>2016-05-04T12:56:17.000Z</pubTime>
+        <title>读：请偷走海报</title>
+        <pubTime>2016-04-12T17:35:34.000Z</pubTime>
         
-         
-           
-             
-              <breadCrumb title="2016年5月" url="http://yoursite.com/categories/2016%E5%B9%B45%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/04/20/2016-04-20-%E5%8E%9F%E7%A0%94%E5%93%89%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%882%EF%BC%89/</loc>
-    <lastmod>2016-05-04T16:04:52.054Z</lastmod>
-    <data>
-        <display>
-        <title>记：《为什么设计》(2)</title>
-        <pubTime>2016-04-20T14:27:29.000Z</pubTime>
-        
-        <tag>Writing</tag>
+        <tag>Reading</tag>
          
          
            
@@ -163,26 +183,6 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/04/17/2016-04-17-%E8%99%8E%E9%97%A8%E5%A4%A7%E6%A1%A5/</loc>
-    <lastmod>2016-04-18T17:24:48.000Z</lastmod>
-    <data>
-        <display>
-        <title>拍：虎门大桥上</title>
-        <pubTime>2016-04-17T15:48:02.000Z</pubTime>
-        
-        <tag>Photo</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://yoursite.com/2016/04/16/2016-04-16-Nice-pic-by-Rob-Sese/</loc>
     <lastmod>2016-04-18T17:22:25.000Z</lastmod>
     <data>
@@ -229,6 +229,26 @@
         <display>
         <title>记：关于摄影</title>
         <pubTime>2016-04-14T15:52:28.000Z</pubTime>
+        
+        <tag>Writing</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/05/05/2016-04-05_hello-world/</loc>
+    <lastmod>2016-04-14T18:04:10.000Z</lastmod>
+    <data>
+        <display>
+        <title>记：Hello World</title>
+        <pubTime>2016-05-04T16:16:17.275Z</pubTime>
         
         <tag>Writing</tag>
          
