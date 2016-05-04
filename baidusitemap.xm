@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/04/23/2016-04-23-Mac-hexo(2)/</loc>
+    <lastmod>2016-05-04T17:48:05.075Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo-Mac入门教程(2)-Git托管静态页面</title>
+        <pubTime>2016-04-23T08:57:51.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/04/22/2016-04-22-Mac-hexo/</loc>
+    <lastmod>2016-05-04T17:47:44.423Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo-Mac入门教程(1)-生成本地静态博客</title>
+        <pubTime>2016-04-22T03:04:51.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/04/17/2016-04-17-%E8%99%8E%E9%97%A8%E5%A4%A7%E6%A1%A5/</loc>
     <lastmod>2016-05-04T16:18:42.958Z</lastmod>
     <data>
@@ -121,46 +161,6 @@
     </url>
 
     
-  <url>
-    <loc>http://yoursite.com/2016/04/23/2016-04-23-Mac-hexo(2)/</loc>
-    <lastmod>2016-04-24T13:25:53.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo-Mac入门教程(2)-Git托管静态页面</title>
-        <pubTime>2016-04-23T08:57:51.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-    
-  <url>
-    <loc>http://yoursite.com/2016/04/22/2016-04-22-Mac-hexo/</loc>
-    <lastmod>2016-04-23T08:52:41.000Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo-Mac入门教程(1)-生成本地静态博客</title>
-        <pubTime>2016-04-22T03:04:51.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://yoursite.com/2016/04/18/2016-04-18-%E5%B0%8F%E6%9C%8B%E5%8F%8B/</loc>
