@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://viggoz.com/2016/04/22/2016-04-22-Mac-hexo/</loc>
+    <lastmod>2016-05-14T18:06:56.947Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo-Mac入门教程(1)-生成本地静态博客</title>
+        <pubTime>2016-04-22T03:04:51.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://viggoz.com/2016/05/04/2016-05-04-%E5%85%B3%E4%BA%8E%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%85%B3%E8%81%8C%E4%B8%9A/</loc>
     <lastmod>2016-05-14T18:04:23.723Z</lastmod>
     <data>
@@ -170,26 +190,6 @@
         <pubTime>2016-04-19T12:27:29.000Z</pubTime>
         
         <tag>Writing</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://viggoz.com/2016/04/22/2016-04-22-Mac-hexo/</loc>
-    <lastmod>2016-05-14T17:54:17.079Z</lastmod>
-    <data>
-        <display>
-        <title>Hexo-Mac入门教程(1)-生成本地静态博客</title>
-        <pubTime>2016-04-22T03:04:51.000Z</pubTime>
-        
-        <tag>Hexo</tag>
          
          
            
