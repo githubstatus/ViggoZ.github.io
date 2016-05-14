@@ -4,7 +4,27 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/05/04/2016-05-04-%E5%85%B3%E4%BA%8E%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%85%B3%E8%81%8C%E4%B8%9A/</loc>
+    <loc>http://viggoz.com/2016/04/05/2016-04-05_hello-world/</loc>
+    <lastmod>2016-05-14T16:03:16.921Z</lastmod>
+    <data>
+        <display>
+        <title>记：Hello World</title>
+        <pubTime>2016-04-05T12:56:17.000Z</pubTime>
+        
+        <tag>Writing</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://viggoz.com/2016/05/04/2016-05-04-%E5%85%B3%E4%BA%8E%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%85%B3%E8%81%8C%E4%B8%9A/</loc>
     <lastmod>2016-05-14T15:15:52.143Z</lastmod>
     <data>
         <display>
@@ -14,7 +34,7 @@
          
            
              
-              <breadCrumb title="2016年5月" url="http://yoursite.com/categories/2016%E5%B9%B45%E6%9C%88/"/>
+              <breadCrumb title="2016年5月" url="http://viggoz.com/categories/2016%E5%B9%B45%E6%9C%88/"/>
           
         </display>
     </data>
@@ -22,7 +42,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/04/18/2016-04-18-%E5%B0%8F%E6%9C%8B%E5%8F%8B/</loc>
+    <loc>http://viggoz.com/2016/04/18/2016-04-18-%E5%B0%8F%E6%9C%8B%E5%8F%8B/</loc>
     <lastmod>2016-05-04T18:04:43.777Z</lastmod>
     <data>
         <display>
@@ -34,7 +54,7 @@
          
            
              
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
           
         </display>
     </data>
@@ -42,7 +62,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/04/16/2016-04-16-Nice-pic-by-Rob-Sese/</loc>
+    <loc>http://viggoz.com/2016/04/16/2016-04-16-Nice-pic-by-Rob-Sese/</loc>
     <lastmod>2016-05-04T18:04:14.407Z</lastmod>
     <data>
         <display>
@@ -54,7 +74,7 @@
          
            
              
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
           
         </display>
     </data>
@@ -62,7 +82,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/04/13/2016-04-13-%E5%85%B3%E4%BA%8E%E8%AF%B7%E5%81%B7%E8%B5%B0%E6%B5%B7%E6%8A%A5/</loc>
+    <loc>http://viggoz.com/2016/04/13/2016-04-13-%E5%85%B3%E4%BA%8E%E8%AF%B7%E5%81%B7%E8%B5%B0%E6%B5%B7%E6%8A%A5/</loc>
     <lastmod>2016-05-04T18:03:43.903Z</lastmod>
     <data>
         <display>
@@ -74,7 +94,7 @@
          
            
              
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
           
         </display>
     </data>
@@ -82,7 +102,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/04/19/2016-04-19-%E5%8E%9F%E7%A0%94%E5%93%89%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%881%EF%BC%89/</loc>
+    <loc>http://viggoz.com/2016/04/19/2016-04-19-%E5%8E%9F%E7%A0%94%E5%93%89%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%881%EF%BC%89/</loc>
     <lastmod>2016-05-04T18:02:37.162Z</lastmod>
     <data>
         <display>
@@ -94,7 +114,7 @@
          
            
              
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
           
         </display>
     </data>
@@ -102,7 +122,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/04/23/2016-04-23-Mac-hexo(2)/</loc>
+    <loc>http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/</loc>
     <lastmod>2016-05-04T18:02:19.443Z</lastmod>
     <data>
         <display>
@@ -114,7 +134,7 @@
          
            
              
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
           
         </display>
     </data>
@@ -122,7 +142,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/04/22/2016-04-22-Mac-hexo/</loc>
+    <loc>http://viggoz.com/2016/04/22/2016-04-22-Mac-hexo/</loc>
     <lastmod>2016-05-04T18:02:13.050Z</lastmod>
     <data>
         <display>
@@ -134,7 +154,7 @@
          
            
              
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
           
         </display>
     </data>
@@ -142,7 +162,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/04/17/2016-04-17-%E8%99%8E%E9%97%A8%E5%A4%A7%E6%A1%A5/</loc>
+    <loc>http://viggoz.com/2016/04/17/2016-04-17-%E8%99%8E%E9%97%A8%E5%A4%A7%E6%A1%A5/</loc>
     <lastmod>2016-05-04T18:01:52.813Z</lastmod>
     <data>
         <display>
@@ -154,7 +174,7 @@
          
            
              
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
           
         </display>
     </data>
@@ -162,7 +182,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/04/20/2016-04-20-%E5%8E%9F%E7%A0%94%E5%93%89%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%882%EF%BC%89/</loc>
+    <loc>http://viggoz.com/2016/04/20/2016-04-20-%E5%8E%9F%E7%A0%94%E5%93%89%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%882%EF%BC%89/</loc>
     <lastmod>2016-05-04T16:17:43.751Z</lastmod>
     <data>
         <display>
@@ -174,7 +194,7 @@
          
            
              
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
           
         </display>
     </data>
@@ -182,7 +202,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/04/09/2016-04-09-%E5%B9%BF%E5%B7%9E%E7%B4%AB%E8%8D%86%E8%8A%B1/</loc>
+    <loc>http://viggoz.com/2016/04/09/2016-04-09-%E5%B9%BF%E5%B7%9E%E7%B4%AB%E8%8D%86%E8%8A%B1/</loc>
     <lastmod>2016-05-04T16:11:16.465Z</lastmod>
     <data>
         <display>
@@ -194,7 +214,7 @@
          
            
              
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
           
         </display>
     </data>
@@ -203,7 +223,7 @@
     
     
   <url>
-    <loc>http://yoursite.com/2016/04/15/2016-04-15-z%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99A-Z/</loc>
+    <loc>http://viggoz.com/2016/04/15/2016-04-15-z%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99A-Z/</loc>
     <lastmod>2016-04-15T17:23:09.000Z</lastmod>
     <data>
         <display>
@@ -215,7 +235,7 @@
          
            
              
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
           
         </display>
     </data>
@@ -223,7 +243,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/04/14/2016-04-14-%E5%85%B3%E4%BA%8E%E6%91%84%E5%BD%B1/</loc>
+    <loc>http://viggoz.com/2016/04/14/2016-04-14-%E5%85%B3%E4%BA%8E%E6%91%84%E5%BD%B1/</loc>
     <lastmod>2016-04-14T19:08:27.000Z</lastmod>
     <data>
         <display>
@@ -235,7 +255,7 @@
          
            
              
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
           
         </display>
     </data>
@@ -243,27 +263,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/05/05/2016-04-05_hello-world/</loc>
-    <lastmod>2016-04-14T18:04:10.000Z</lastmod>
-    <data>
-        <display>
-        <title>记：Hello World</title>
-        <pubTime>2016-05-04T16:16:17.275Z</pubTime>
-        
-        <tag>Writing</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/04/07/2016-04-07_Music_Naxsy/</loc>
+    <loc>http://viggoz.com/2016/04/07/2016-04-07_Music_Naxsy/</loc>
     <lastmod>2016-04-07T14:56:06.000Z</lastmod>
     <data>
         <display>
@@ -275,7 +275,7 @@
          
            
              
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
           
         </display>
     </data>
@@ -283,7 +283,7 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/04/07/2016-04-07_Music-Waterfalls/</loc>
+    <loc>http://viggoz.com/2016/04/07/2016-04-07_Music-Waterfalls/</loc>
     <lastmod>2016-04-06T12:20:06.000Z</lastmod>
     <data>
         <display>
@@ -295,7 +295,7 @@
          
            
              
-              <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
           
         </display>
     </data>
