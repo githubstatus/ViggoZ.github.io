@@ -199,7 +199,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/05/04/2016-05-04-关于用户体验设计相关职业/" data-id="cio7dpiw2001e8ovd8i2i007h" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/05/04/2016-05-04-关于用户体验设计相关职业/" data-id="cio7eisl8001b34vdko51g6up" class="article-share-link">Share</a>
       
       
     </footer>
@@ -235,34 +235,20 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="1-安装Git工具包"><a href="#1-安装Git工具包" class="headerlink" title="1. 安装Git工具包"></a>1. 安装<a href="https://git-scm.com/" target="_blank" rel="external">Git工具包</a></h3><p>上一个教程已经安装过就忽略</p>
-<h3 id="2-注册github账号"><a href="#2-注册github账号" class="headerlink" title="2. 注册github账号"></a>2. 注册<a href="https://github.com/" target="_blank" rel="external">github</a>账号</h3><p>这里不做过多解释</p>
+        <h3 id="1-安装Git工具包"><a href="#1-安装Git工具包" class="headerlink" title="1. 安装Git工具包"></a>1. 安装<a href="https://git-scm.com/">Git工具包</a></h3><p>上一个教程已经安装过就忽略</p>
+<h3 id="2-注册github账号"><a href="#2-注册github账号" class="headerlink" title="2. 注册github账号"></a>2. 注册<a href="https://github.com/">github</a>账号</h3><p>这里不做过多解释</p>
 <h3 id="3-终端创建ssh"><a href="#3-终端创建ssh" class="headerlink" title="3. 终端创建ssh"></a>3. 终端创建ssh</h3><p>打开 Terminal，(不知道终端在哪儿的，就直接在spotlight里搜terminal)<br>分别键入代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ～/.ssh </span><br><span class="line"></span><br><span class="line">ssh-keygen -t rsa -C xxxxx@gmail.com（注册github时的email）</span><br></pre></td></tr></table></figure></p>
 <p>按三次回车</p>
-<h3 id="4-查看ssh"><a href="#4-查看ssh" class="headerlink" title="4. 查看ssh"></a>4. 查看ssh</h3><p>分别键入代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd ～/.ssh </span><br><span class="line"></span><br><span class="line">LS</span><br><span class="line"></span><br><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></p>
-<p>#more</p>
-<p> <img src="https://viggoz.github.io/img/04-23/cdssh.png" alt=""><br> 下面那一堆就是生成的ssh。从‘ssh-rsa’开始 你的邮箱结束。圈选复制。</p>
-<hr>
-<h3 id="5-在github中添加ssh"><a href="#5-在github中添加ssh" class="headerlink" title="5. 在github中添加ssh"></a>5. 在github中添加ssh</h3><p> <img src="https://viggoz.github.io/img/04-23/addssh.png" alt=""><br>登录Github–&gt;点你的头像–&gt;点Setting–&gt;点击SSH and GPG keys–&gt;New SSH key</p>
-<p>’Title‘随便填. ’Key‘粘贴你刚复制的那长串</p>
-<p>Add SSH key</p>
-<h3 id="5-上传你的博客"><a href="#5-上传你的博客" class="headerlink" title="5. 上传你的博客"></a>5. 上传你的博客</h3><p>接下来就可以上传你的代码了<br>在github下New repository。Create a New Repository如下：<br> <img src="https://viggoz.github.io/img/04-23/create.png" alt=""><br><strong>注：</strong>github开源项目也就是Public不收费，私有项目也就是Private是收费的.<br>创建成功出现如下图<br> <img src="https://viggoz.github.io/img/04-23/createok.png" alt=""></p>
-<p>复制那个HTTPS网址</p>
-<h3 id="6-Hexo配置文件"><a href="#6-Hexo配置文件" class="headerlink" title="6. Hexo配置文件"></a>6. Hexo配置文件</h3><p>打开桌面创建的博客目录，打开根目录下的_config.yml文件<br> <img src="https://viggoz.github.io/img/04-23/config.png" alt=""></p>
-<p>按照刚才复制的<a href="https://github.com/ViggoZ/xxxxx.github.io.git" target="_blank" rel="external">https://github.com/ViggoZ/xxxxx.github.io.git</a><br>修改最下面的 ‘deploy’参数</p>
-<p><strong>注意！！！冒号后面空格不能少. </strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://yourName:*********@github.com/ViggoZ/xxxxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
-<p>’yourName‘为你的github用户名， ‘<strong><strong>*</strong></strong>’为登录密码</p>
-<p>保存关闭</p>
-<h3 id="7-终端上传你的博客"><a href="#7-终端上传你的博客" class="headerlink" title="7. 终端上传你的博客"></a>7. 终端上传你的博客</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd Desktop/Hexo1</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
-<p>电脑输入网址xxxxx.github.io</p>
-<hr>
-<p>END</p>
-
+<h3 id="4-查看ssh"><a href="#4-查看ssh" class="headerlink" title="4. 查看ssh"></a>4. 查看ssh</h3>
+        
+          <p class="article-more-link">
+            <a href="/2016/04/23/2016-04-23-Mac-hexo(2)/#more">更多</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/" data-id="cio7dpiw0001b8ovdydfk54iv" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/" data-id="cio7eisl8001834vdkg0ukng0" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
@@ -352,7 +338,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/04/22/2016-04-22-Mac-hexo/" data-id="cio7dpivg00178ovdxf7d5hr8" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/04/22/2016-04-22-Mac-hexo/" data-id="cio7eisl8001434vdwla7o4h9" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
@@ -402,7 +388,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/04/20/2016-04-20-原研哉：为什么设计（2）/" data-id="cio7dpivg00148ovd7t98xn6v" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/04/20/2016-04-20-原研哉：为什么设计（2）/" data-id="cio7eisl8001134vdhcvm6pwb" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Writing/">Writing</a></li></ul>
@@ -453,7 +439,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/04/19/2016-04-19-原研哉：为什么设计（1）/" data-id="cio7dpivg000x8ovd38ffvmtc" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/04/19/2016-04-19-原研哉：为什么设计（1）/" data-id="cio7eisl8000y34vducmfpfc4" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Writing/">Writing</a></li></ul>
@@ -500,7 +486,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/04/18/2016-04-18-小朋友/" data-id="cio7dpivg00108ovdgfmwokuh" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/04/18/2016-04-18-小朋友/" data-id="cio7eisks000w34vdps26eeel" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Photo/">Photo</a></li></ul>
@@ -544,7 +530,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/04/17/2016-04-17-虎门大桥/" data-id="cio7dpivg000q8ovds88fwxal" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/04/17/2016-04-17-虎门大桥/" data-id="cio7eisks000s34vd99pwsm5w" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Photo/">Photo</a></li></ul>
@@ -590,7 +576,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/04/16/2016-04-16-Nice-pic-by-Rob-Sese/" data-id="cio7dpivg000t8ovd9kwtk1li" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/04/16/2016-04-16-Nice-pic-by-Rob-Sese/" data-id="cio7eisks000q34vd5wubzjty" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Photo/">Photo</a></li></ul>
@@ -673,7 +659,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/04/15/2016-04-15-z常用网站A-Z/" data-id="cio7dpivg000j8ovdzmvzjolb" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/04/15/2016-04-15-z常用网站A-Z/" data-id="cio7eisks000m34vdehyonoci" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Writing/">Writing</a></li></ul>
@@ -701,7 +687,7 @@ ga('send', 'pageview');
 <div class="article-gallery">
   <div class="article-gallery-photos">
     
-      <a class="article-gallery-img fancybox" href="https://viggoz.github.io/img/16-04-15广州紫荆花/1.jpg" rel="gallery_cio7dpivg000l8ovdrizws06q">
+      <a class="article-gallery-img fancybox" href="https://viggoz.github.io/img/16-04-15广州紫荆花/1.jpg" rel="gallery_cio7eisks000j34vdypj0ojda">
         <img src="https://viggoz.github.io/img/16-04-15广州紫荆花/1.jpg" itemprop="image">
       </a>
     
@@ -735,7 +721,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/04/14/2016-04-14-关于摄影/" data-id="cio7dpivg000l8ovdrizws06q" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/04/14/2016-04-14-关于摄影/" data-id="cio7eisks000j34vdypj0ojda" class="article-share-link">Share</a>
       
       
   <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Writing/">Writing</a></li></ul>

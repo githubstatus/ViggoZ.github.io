@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/</loc>
-    <lastmod>2016-05-14T16:48:12.377Z</lastmod>
+    <lastmod>2016-05-14T17:02:53.048Z</lastmod>
     <data>
         <display>
         <title>Hexo-Mac入门教程(2)-Git托管静态页面</title>
