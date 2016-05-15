@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://viggoz.com/2016/04/16/2016-04-16-Nice-pic-by-Rob-Sese/</loc>
+    <lastmod>2016-05-15T07:51:14.360Z</lastmod>
+    <data>
+        <display>
+        <title>赏：Nice pic by Rob Sese</title>
+        <pubTime>2016-04-16T12:07:15.000Z</pubTime>
+        
+        <tag>Photo</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://viggoz.com/2015/12/15/2015-12-15-pic%E6%BD%AE%E6%B1%95/</loc>
     <lastmod>2016-05-15T07:37:45.618Z</lastmod>
     <data>
@@ -391,26 +411,6 @@
         <pubTime>2016-04-23T08:57:51.000Z</pubTime>
         
         <tag>Hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://viggoz.com/2016/04/16/2016-04-16-Nice-pic-by-Rob-Sese/</loc>
-    <lastmod>2016-05-04T18:04:14.407Z</lastmod>
-    <data>
-        <display>
-        <title>赏：Nice pic by Rob Sese</title>
-        <pubTime>2016-04-16T12:07:15.000Z</pubTime>
-        
-        <tag>Photo</tag>
          
          
            
