@@ -4,6 +4,46 @@
 
     
   <url>
+    <loc>http://viggoz.com/2016/05/15/2016-05-15-pic%E6%AF%95%E4%B8%9A%E5%AD%A3/</loc>
+    <lastmod>2016-05-15T05:35:31.653Z</lastmod>
+    <data>
+        <display>
+        <title>毕业季</title>
+        <pubTime>2016-05-15T04:01:19.000Z</pubTime>
+        
+        <tag>Photo</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年5月" url="http://viggoz.com/categories/2016%E5%B9%B45%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://viggoz.com/2016/05/15/2016-05-15-pic%E6%BD%AE%E6%B1%95/</loc>
+    <lastmod>2016-05-15T05:13:58.701Z</lastmod>
+    <data>
+        <display>
+        <title>兔子耳朵</title>
+        <pubTime>2016-05-15T05:01:19.000Z</pubTime>
+        
+        <tag>Photo</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年5月" url="http://viggoz.com/categories/2016%E5%B9%B45%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://viggoz.com/2016/03/15/2016-03-15-%E6%B9%96_%E8%87%AA%E6%8B%8D/</loc>
     <lastmod>2016-05-15T05:10:22.263Z</lastmod>
     <data>
@@ -117,26 +157,6 @@
            
              
               <breadCrumb title="2015年9月" url="http://viggoz.com/categories/2015%E5%B9%B49%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://viggoz.com/2016/05/15/2016-05-15-pic%E6%AF%95%E4%B8%9A%E5%AD%A3/</loc>
-    <lastmod>2016-05-15T04:40:55.238Z</lastmod>
-    <data>
-        <display>
-        <title>毕业季</title>
-        <pubTime>2016-05-15T04:01:19.000Z</pubTime>
-        
-        <tag>Photo</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年5月" url="http://viggoz.com/categories/2016%E5%B9%B45%E6%9C%88/"/>
           
         </display>
     </data>
