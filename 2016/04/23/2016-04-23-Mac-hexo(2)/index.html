@@ -3,23 +3,25 @@
 <head>
   <meta charset="utf-8">
   
-  <title>虎门大桥 | Viggo.Z</title>
+  <title>Hexo(2)-Git托管静态页面-Mac | Viggo.Z</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="HuMen Bridge. I saw the beautiful scenery on the way to Shenzhen. I was on the bus. It looks very clean :)
-@viggoz">
+  <meta name="description" content="1. 安装Git工具包">
 <meta property="og:type" content="article">
-<meta property="og:title" content="虎门大桥">
-<meta property="og:url" content="http://viggoz.com/2016/04/17/2016-04-17-虎门大桥/index.html">
+<meta property="og:title" content="Hexo(2)-Git托管静态页面-Mac">
+<meta property="og:url" content="http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/index.html">
 <meta property="og:site_name" content="Viggo.Z">
-<meta property="og:description" content="HuMen Bridge. I saw the beautiful scenery on the way to Shenzhen. I was on the bus. It looks very clean :)
-@viggoz">
-<meta property="og:image" content="https://viggoz.github.io/img/0417.jpg">
-<meta property="og:updated_time" content="2016-05-17T13:12:35.351Z">
+<meta property="og:description" content="1. 安装Git工具包">
+<meta property="og:image" content="https://viggoz.github.io/img/cd/hexo.jpg">
+<meta property="og:image" content="https://viggoz.github.io/img/04-23/cdssh.png">
+<meta property="og:image" content="https://viggoz.github.io/img/04-23/addssh.png">
+<meta property="og:image" content="https://viggoz.github.io/img/04-23/create.png">
+<meta property="og:image" content="https://viggoz.github.io/img/04-23/createok.png">
+<meta property="og:image" content="https://viggoz.github.io/img/04-23/config.png">
+<meta property="og:updated_time" content="2016-05-17T14:01:49.289Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="虎门大桥">
-<meta name="twitter:description" content="HuMen Bridge. I saw the beautiful scenery on the way to Shenzhen. I was on the bus. It looks very clean :)
-@viggoz">
-<meta name="twitter:image" content="https://viggoz.github.io/img/0417.jpg">
+<meta name="twitter:title" content="Hexo(2)-Git托管静态页面-Mac">
+<meta name="twitter:description" content="1. 安装Git工具包">
+<meta name="twitter:image" content="https://viggoz.github.io/img/cd/hexo.jpg">
 <meta name="twitter:creator" content="@https://twitter.com/viggo_z">
 <link rel="publisher" href="https://plus.google.com/117797853492180056387">
 <meta property="fb:admins" content="viggoZW">
@@ -144,10 +146,10 @@ ga('send', 'pageview');
   
 </aside>
         
-        <section id="main"><article id="post-2016-04-17-虎门大桥" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-2016-04-23-Mac-hexo(2)" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/04/17/2016-04-17-虎门大桥/" class="article-date">
-  <time datetime="2016-04-17T15:48:02.000Z" itemprop="datePublished">2016-04-17</time>
+    <a href="/2016/04/23/2016-04-23-Mac-hexo(2)/" class="article-date">
+  <time datetime="2016-04-23T08:57:51.000Z" itemprop="datePublished">2016-04-23</time>
 </a>
     
   <div class="article-category">
@@ -162,7 +164,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      虎门大桥
+      Hexo(2)-Git托管静态页面-Mac
     </h1>
   
 
@@ -170,18 +172,40 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="https://viggoz.github.io/img/0417.jpg" alt=""><br>HuMen Bridge. I saw the beautiful scenery on the way to Shenzhen. I was on the bus. It looks very clean :)</p>
-<p><a href="[https://500px.com/viggoz]">@viggoz</a></p>
+        <p><img src="https://viggoz.github.io/img/cd/hexo.jpg" alt=""></p>
+<h3 id="1-安装Git工具包"><a href="#1-安装Git工具包" class="headerlink" title="1. 安装Git工具包"></a>1. 安装<a href="https://git-scm.com/" target="_blank" rel="external">Git工具包</a></h3><a id="more"></a>
+<p>上一个教程已经安装过就忽略</p>
+<h3 id="2-注册github账号"><a href="#2-注册github账号" class="headerlink" title="2. 注册github账号"></a>2. 注册<a href="https://github.com/" target="_blank" rel="external">github</a>账号</h3><p>这里不做过多解释</p>
+<h3 id="3-终端创建ssh"><a href="#3-终端创建ssh" class="headerlink" title="3. 终端创建ssh"></a>3. 终端创建ssh</h3><p>打开 Terminal，(不知道终端在哪儿的，就直接在spotlight里搜terminal)<br>分别键入代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ～/.ssh </span><br><span class="line"></span><br><span class="line">ssh-keygen -t rsa -C xxxxx@gmail.com（注册github时的email）</span><br></pre></td></tr></table></figure></p>
+<p>按三次回车</p>
+<h3 id="4-查看ssh"><a href="#4-查看ssh" class="headerlink" title="4. 查看ssh"></a>4. 查看ssh</h3><p>分别键入代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">cd ～/.ssh </span><br><span class="line"></span><br><span class="line">LS</span><br><span class="line"></span><br><span class="line">cat id_rsa.pub</span><br></pre></td></tr></table></figure></p>
+<p> <img src="https://viggoz.github.io/img/04-23/cdssh.png" alt=""><br> 下面那一堆就是生成的ssh。从‘ssh-rsa’开始 你的邮箱结束。圈选复制。</p>
+<hr>
+<h3 id="5-在github中添加ssh"><a href="#5-在github中添加ssh" class="headerlink" title="5. 在github中添加ssh"></a>5. 在github中添加ssh</h3><p> <img src="https://viggoz.github.io/img/04-23/addssh.png" alt=""><br>登录Github–&gt;点你的头像–&gt;点Setting–&gt;点击SSH and GPG keys–&gt;New SSH key</p>
+<p>’Title‘随便填. ’Key‘粘贴你刚复制的那长串</p>
+<p>Add SSH key</p>
+<h3 id="5-上传你的博客"><a href="#5-上传你的博客" class="headerlink" title="5. 上传你的博客"></a>5. 上传你的博客</h3><p>接下来就可以上传你的代码了<br>在github下New repository。Create a New Repository如下：<br> <img src="https://viggoz.github.io/img/04-23/create.png" alt=""><br><strong>注：</strong>github开源项目也就是Public不收费，私有项目也就是Private是收费的.<br>创建成功出现如下图<br> <img src="https://viggoz.github.io/img/04-23/createok.png" alt=""></p>
+<p>复制那个HTTPS网址</p>
+<h3 id="6-Hexo配置文件"><a href="#6-Hexo配置文件" class="headerlink" title="6. Hexo配置文件"></a>6. Hexo配置文件</h3><p>打开桌面创建的博客目录，打开根目录下的_config.yml文件<br> <img src="https://viggoz.github.io/img/04-23/config.png" alt=""></p>
+<p>按照刚才复制的<a href="https://github.com/ViggoZ/xxxxx.github.io.git" target="_blank" rel="external">https://github.com/ViggoZ/xxxxx.github.io.git</a><br>修改最下面的 ‘deploy’参数</p>
+<p><strong>注意！！！冒号后面空格不能少. </strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: https://yourName:*********@github.com/ViggoZ/xxxxx.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<p>’yourName‘为你的github用户名， ‘<strong><strong>*</strong></strong>’为登录密码</p>
+<p>保存关闭</p>
+<h3 id="7-终端上传你的博客"><a href="#7-终端上传你的博客" class="headerlink" title="7. 终端上传你的博客"></a>7. 终端上传你的博客</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd Desktop/Hexo1</span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
+<p>电脑输入网址xxxxx.github.io</p>
+<hr>
+<p>END</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/04/17/2016-04-17-虎门大桥/" data-id="ciobidkcf001fjkvd3418kttv" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/" data-id="ciobidkcq001ujkvdmlnzodek" class="article-share-link">Share</a>
       
-        <a href="http://viggoz.com/2016/04/17/2016-04-17-虎门大桥/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/#disqus_thread" class="article-comment-link">Comments</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Photo/">Photo</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
 
     </footer>
   </div>
@@ -189,19 +213,19 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-    <a href="/2016/04/19/2016-04-19-为什么设计（1）/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="/2016/05/01/2016-05-1-cat/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Newer</strong>
       <div class="article-nav-title">
         
-          为什么设计(1)
+          Cat
         
       </div>
     </a>
   
   
-    <a href="/2016/04/16/2016-04-16-Nice-pic-by-Rob-Sese/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2016/04/22/2016-04-22-Mac-hexo/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Nice pic by Rob Sese</div>
+      <div class="article-nav-title">Hexo(1)-生成本地静态博客-Mac</div>
     </a>
   
 </nav>
@@ -232,7 +256,7 @@ ga('send', 'pageview');
 <script>
   var disqus_shortname = 'viggoz';
   
-  var disqus_url = 'http://viggoz.com/2016/04/17/2016-04-17-虎门大桥/';
+  var disqus_url = 'http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/';
   
   (function(){
     var dsq = document.createElement('script');
