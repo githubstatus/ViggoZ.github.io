@@ -4,11 +4,29 @@
 
     
   <url>
-    <loc>http://viggoz.com/2016/05/04/2016-05-04-%E5%85%B3%E4%BA%8E%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%85%B3%E8%81%8C%E4%B8%9A/</loc>
-    <lastmod>2016-05-17T03:53:53.103Z</lastmod>
+    <loc>http://viggoz.com/2016/05/17/2016-05-17-%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E9%83%A8%E9%97%A8/</loc>
+    <lastmod>2016-05-17T05:07:01.028Z</lastmod>
     <data>
         <display>
-        <title>2016-05-04-关于用户体验设计相关职业</title>
+        <title>用户体验入门心得</title>
+        <pubTime>2016-05-17T04:06:17.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="2016年5月" url="http://viggoz.com/categories/2016%E5%B9%B45%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://viggoz.com/2016/05/04/2016-05-04-%E5%85%B3%E4%BA%8E%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%85%B3%E8%81%8C%E4%B8%9A%20-%20%E5%89%AF%E6%9C%AC/</loc>
+    <lastmod>2016-05-17T04:01:14.207Z</lastmod>
+    <data>
+        <display>
+        <title>用户体验设计入门必知</title>
         <pubTime>2016-05-04T12:56:17.000Z</pubTime>
         
          
