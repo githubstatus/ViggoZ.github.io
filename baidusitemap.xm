@@ -4,6 +4,24 @@
 
     
   <url>
+    <loc>http://viggoz.com/2016/05/04/2016-05-04-%E5%85%B3%E4%BA%8E%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%85%B3%E8%81%8C%E4%B8%9A/</loc>
+    <lastmod>2016-05-17T03:53:53.103Z</lastmod>
+    <data>
+        <display>
+        <title>2016-05-04-关于用户体验设计相关职业</title>
+        <pubTime>2016-05-04T12:56:17.000Z</pubTime>
+        
+         
+           
+             
+              <breadCrumb title="2016年5月" url="http://viggoz.com/categories/2016%E5%B9%B45%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://viggoz.com/2016/04/13/2016-04-13-%E5%85%B3%E4%BA%8E%E8%AF%B7%E5%81%B7%E8%B5%B0%E6%B5%B7%E6%8A%A5/</loc>
     <lastmod>2016-05-17T03:18:21.936Z</lastmod>
     <data>
@@ -318,24 +336,6 @@
            
              
               <breadCrumb title="2016年3月" url="http://viggoz.com/categories/2016%E5%B9%B43%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://viggoz.com/2016/05/04/2016-05-04-%E5%85%B3%E4%BA%8E%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E8%AE%BE%E8%AE%A1%E7%9B%B8%E5%85%B3%E8%81%8C%E4%B8%9A/</loc>
-    <lastmod>2016-05-14T18:08:17.707Z</lastmod>
-    <data>
-        <display>
-        <title>2016-05-04-关于用户体验设计相关职业</title>
-        <pubTime>2016-05-04T12:56:17.000Z</pubTime>
-        
-         
-           
-             
-              <breadCrumb title="2016年5月" url="http://viggoz.com/categories/2016%E5%B9%B45%E6%9C%88/"/>
           
         </display>
     </data>
