@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://viggoz.com/2016/05/17/2016-05-17-%E7%94%A8%E6%88%B7%E4%BD%93%E9%AA%8C%E9%83%A8%E9%97%A8/</loc>
-    <lastmod>2016-05-17T05:07:01.028Z</lastmod>
+    <lastmod>2016-05-17T05:14:13.012Z</lastmod>
     <data>
         <display>
         <title>用户体验入门心得</title>
