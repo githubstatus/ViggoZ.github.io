@@ -2,9 +2,79 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://viggoz.com/2016/04/14/2016-04-14-%E5%85%B3%E4%BA%8E%E6%91%84%E5%BD%B1/</loc>
+    
+    <lastmod>2016-05-17T13:18:13.662Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://viggoz.com/2016/04/19/2016-04-19-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%881%EF%BC%89/</loc>
+    
+    <lastmod>2016-05-17T13:17:53.370Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://viggoz.com/2016/04/20/2016-04-20-%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%882%EF%BC%89/</loc>
+    
+    <lastmod>2016-05-17T13:17:48.999Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://viggoz.com/2016/04/13/2016-04-13-%E5%85%B3%E4%BA%8E%E8%AF%B7%E5%81%B7%E8%B5%B0%E6%B5%B7%E6%8A%A5/</loc>
+    
+    <lastmod>2016-05-17T13:16:43.953Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://viggoz.com/2016/01/19/2016-04-18-A%20man%20with%20a%20story/</loc>
+    
+    <lastmod>2016-05-17T13:13:53.780Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://viggoz.com/2016/04/09/2016-04-09-%E5%B9%BF%E5%B7%9E%E7%B4%AB%E8%8D%86%E8%8A%B1/</loc>
+    
+    <lastmod>2016-05-17T13:13:10.757Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://viggoz.com/2016/04/16/2016-04-16-Nice-pic-by-Rob-Sese/</loc>
+    
+    <lastmod>2016-05-17T13:12:52.292Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://viggoz.com/2016/04/17/2016-04-17-%E8%99%8E%E9%97%A8%E5%A4%A7%E6%A1%A5/</loc>
+    
+    <lastmod>2016-05-17T13:12:35.351Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/</loc>
+    
+    <lastmod>2016-05-17T13:11:05.878Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://viggoz.com/2016/04/22/2016-04-22-Mac-hexo/</loc>
+    
+    <lastmod>2016-05-17T13:10:50.913Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://viggoz.com/2016/05/17/2016-05-17-hexo3/</loc>
     
-    <lastmod>2016-05-17T13:01:41.805Z</lastmod>
+    <lastmod>2016-05-17T13:10:45.430Z</lastmod>
     
   </url>
   
@@ -37,51 +107,9 @@
   </url>
   
   <url>
-    <loc>http://viggoz.com/2016/04/13/2016-04-13-%E5%85%B3%E4%BA%8E%E8%AF%B7%E5%81%B7%E8%B5%B0%E6%B5%B7%E6%8A%A5/</loc>
-    
-    <lastmod>2016-05-17T03:18:21.936Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://viggoz.com/2016/04/20/2016-04-20-%E5%8E%9F%E7%A0%94%E5%93%89%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%882%EF%BC%89/</loc>
-    
-    <lastmod>2016-05-17T03:18:19.733Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://viggoz.com/2016/04/19/2016-04-19-%E5%8E%9F%E7%A0%94%E5%93%89%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%881%EF%BC%89/</loc>
-    
-    <lastmod>2016-05-17T03:17:58.098Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/</loc>
-    
-    <lastmod>2016-05-17T03:07:25.932Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://viggoz.com/2016/04/22/2016-04-22-Mac-hexo/</loc>
-    
-    <lastmod>2016-05-17T03:07:18.978Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://viggoz.com/about/index.html</loc>
     
     <lastmod>2016-05-16T03:30:14.515Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://viggoz.com/2016/04/16/2016-04-16-Nice-pic-by-Rob-Sese/</loc>
-    
-    <lastmod>2016-05-15T07:51:14.360Z</lastmod>
     
   </url>
   
@@ -135,13 +163,6 @@
   </url>
   
   <url>
-    <loc>http://viggoz.com/2016/01/19/2016-04-18-%E5%B0%8F%E6%9C%8B%E5%8F%8B/</loc>
-    
-    <lastmod>2016-05-15T05:05:30.914Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://viggoz.com/2016/04/05/2016-04-05_hello-world/</loc>
     
     <lastmod>2016-05-14T18:02:55.969Z</lastmod>
@@ -149,30 +170,9 @@
   </url>
   
   <url>
-    <loc>http://viggoz.com/2016/04/09/2016-04-09-%E5%B9%BF%E5%B7%9E%E7%B4%AB%E8%8D%86%E8%8A%B1/</loc>
-    
-    <lastmod>2016-05-14T17:58:36.187Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://viggoz.com/2016/04/14/2016-04-14-%E5%85%B3%E4%BA%8E%E6%91%84%E5%BD%B1/</loc>
-    
-    <lastmod>2016-05-14T17:57:13.253Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://viggoz.com/2016/04/15/2016-04-15-z%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99A-Z/</loc>
+    <loc>http://viggoz.com/2016/04/15/2016-04-15-%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99A-Z/</loc>
     
     <lastmod>2016-05-14T17:56:37.469Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://viggoz.com/2016/04/17/2016-04-17-%E8%99%8E%E9%97%A8%E5%A4%A7%E6%A1%A5/</loc>
-    
-    <lastmod>2016-05-04T18:01:52.813Z</lastmod>
     
   </url>
   

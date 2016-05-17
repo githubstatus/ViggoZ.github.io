@@ -67,8 +67,6 @@ ga('send', 'pageview');
         <a id="nav-search-btn" class="nav-icon" title="Search"></a>
         
         
-          <a id="nav-github-link" class="nav-icon" href="https://github.com/ppoffice/hexo-theme-alex" title="Fork me on GitHub"></a>
-        
       </nav>
     </div>
   </div>
@@ -102,7 +100,7 @@ ga('send', 'pageview');
   <div class="widget-wrap">
     <h3 class="widget-title">Tag Cloud</h3>
     <div class="widget tagcloud">
-      <a href="/tags/Hexo/" style="font-size: 13.33px;">Hexo</a> <a href="/tags/Music/" style="font-size: 13.33px;">Music</a> <a href="/tags/Photo/" style="font-size: 20px;">Photo</a> <a href="/tags/Reading/" style="font-size: 10px;">Reading</a> <a href="/tags/Writing/" style="font-size: 16.67px;">Writing</a>
+      <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Music/" style="font-size: 10px;">Music</a> <a href="/tags/Photo/" style="font-size: 20px;">Photo</a> <a href="/tags/Reading/" style="font-size: 15px;">Reading</a> <a href="/tags/Writing/" style="font-size: 15px;">Writing</a>
     </div>
   </div>
 
@@ -148,6 +146,10 @@ ga('send', 'pageview');
   <time datetime="2016-05-17T11:52:24.000Z" itemprop="datePublished">2016-05-17</time>
 </a>
     
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/2016年5月/">2016年5月</a>
+  </div>
+
   </div>
   <div class="article-inner">
     
@@ -156,7 +158,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/05/17/2016-05-17-hexo3/">2016-05-17-hexo3</a>
+      <a class="article-title" href="/2016/05/17/2016-05-17-hexo3/">hexo(3)-生成sitemap站点地图</a>
     </h1>
   
 
@@ -164,46 +166,22 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>百度+谷歌都无法搜索到我的博客 不能忍</p>
-<h2 id="1-先确认博客是否被收录"><a href="#1-先确认博客是否被收录" class="headerlink" title="1.先确认博客是否被收录"></a>1.先确认博客是否被收录</h2><p>在百度或者谷歌上面输入下面格式来判断，如果能搜索到就说明被收录，否则就没有。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site:viggoz.com</span><br></pre></td></tr></table></figure></p>
-<p> <img src="https://viggoz.github.io/img/0517/1.jpg" alt=""></p>
-<h2 id="2-创建站点地图文件"><a href="#2-创建站点地图文件" class="headerlink" title="2.创建站点地图文件"></a>2.创建站点地图文件</h2><p>站点地图是一种文件，您可以通过该文件列出您网站上的网页，从而将您网站内容的组织架构告知Google和其他搜索引擎。搜索引擎网页抓取工具会读取此文件，以便更加智能地抓取您的网站。</p>
-<ul>
-<li><p>先安装一下，打开你的hexo博客根目录，分别用下面两个命令来安装针对谷歌和百度的插件</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在博客目录的_config.yml中添加如下代码</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Plugins:</span><br><span class="line">- hexo-generator-baidu-sitemap</span><br><span class="line">- hexo-generator-sitemap</span><br><span class="line"></span><br><span class="line">baidusitemap:</span><br><span class="line">    path: baidusitemap.xml</span><br><span class="line">sitemap:</span><br><span class="line">    path: sitemap.xml</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<p>在你的博客根目录的public下面发现生成了sitemap.xml以及baidusitemap.xml就表示成功了</p>
-<h2 id="3-让百度收录我们的博客"><a href="#3-让百度收录我们的博客" class="headerlink" title="3.让百度收录我们的博客"></a>3.让百度收录我们的博客</h2><p><strong>验证网站</strong></p>
-<ul>
-<li>为什么要验证网站<br>站长平台推荐站长添加主站（您网站的链接也许会使用www 和非 www 两种网址，建议添加用户能够真实访问到的网址），添加并验证后，可证明您是该域名的拥有者，可以快捷批量添加子站点，查看所有子站数据，无需再一一验证您的子站点。</li>
-<li>如何验证网站<br>首先如果您的网站已使用了百度统计，您可以使用统计账号登录平台，或者绑定站长平台与百度统计账号，站长平台支持您批量导入百度统计中的站点，您不需要再对网站进行验证。<br>百度站长平台为未使用百度统计的站点提供三种验证方式：文件验证、html标签验证、CNAME验证。</li>
-</ul>
-<p>验证完成后，将会认为您是网站的拥有者。为使您的网站一直保持验证通过的状态，请保留验证的文件、html标签或CNAME记录，会去定期检查验证记录。</p>
-<p>这里演示<a href="http://zhanzhang.baidu.com/dashboard/index" target="_blank" rel="external">百度站长平台</a><br>输入你的网址<br><img src="https://viggoz.github.io/img/0517/2.jpg" alt=""><br>这里推荐使用文件验证。下载文件放到Hexo\public目录下即可<br><img src="https://viggoz.github.io/img/0517/3.jpg" alt=""><br><strong>链接提交</strong><br>上面步骤成功后，进入站点管理，选择<strong>网页抓取</strong>——<strong>链接提交</strong></p>
-<p>这里推荐自动推送和sitemap<br>从效率上来说：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">主动推送&gt;自动推送&gt;sitemap</span><br></pre></td></tr></table></figure></p>
-<p><strong>自动推送</strong><br>自动推送很简单，就是在你代码里面嵌入自动推送JS代码，在页面被访问时，页面URL将立即被推送给百度<br>复制代码到下面目录文件里就好添加到下面就行。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\themes\xxxx\layout\_partial\after_footer.ejs</span><br></pre></td></tr></table></figure></p>
-<p><img src="https://viggoz.github.io/img/0517/4.jpg" alt=""></p>
-<p><strong>sitemap提交</strong><br>直接提交就行<br><img src="https://viggoz.github.io/img/0517/5.jpg" alt=""></p>
-<p>如何选择链接提交方式<br>1、主动推送：最为快速的提交方式，推荐您将站点当天新产出链接立即通过此方式推送给百度，以保证新链接可以及时被百度收录。<br>2、自动推送：最为便捷的提交方式，请将自动推送的JS代码部署在站点的每一个页面源代码中，部署代码的页面在每次被浏览时，链接会被自动推送给百度。可以与主动推送配合使用。<br>3、sitemap：您可以定期将网站链接放到sitemap中，然后将sitemap提交给百度。百度会周期性的抓取检查您提交的sitemap，对其中的链接进行处理，但收录速度慢于主动推送。<br>4、手动提交：一次性提交链接给百度，可以使用此种方式。</p>
-<h2 id="4-谷歌收录我们的博客"><a href="#4-谷歌收录我们的博客" class="headerlink" title="4.谷歌收录我们的博客"></a>4.谷歌收录我们的博客</h2><p>谷歌操作比较简单，就是向<a href="https://www.google.com/webmasters/tools" target="_blank" rel="external">Google站长工具</a>提交sitemap<br>登录Google账号，添加了站点验证通过后，选择站点，之后在<strong>抓取</strong>——<strong>站点地图</strong>——<strong>添加/测试站点地图</strong>，如下图：<br> <img src="https://viggoz.github.io/img/0517/googleSitemap.jpg" alt=""></p>
-<p>谷歌我提交立马就能搜索到我的博客了，效率很高。</p>
-<p><strong>参考文章</strong></p>
-<ul>
-<li><a href="http://www.jianshu.com/p/619dab2d3c08#" target="_blank" rel="external">嘟嘟MD（简书作者）</a></li>
-</ul>
-
+        <p><img src="https://viggoz.github.io/img/cd/hexo.jpg" alt=""><br>百度+谷歌都无法搜索到我的博客 不能忍<br>
+        
+          <p class="article-more-link">
+            <a href="/2016/05/17/2016-05-17-hexo3/#more">Read More</a>
+          </p>
+        
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/05/17/2016-05-17-hexo3/" data-id="ciobe0cs80025v4vdy9qcwhdd" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/05/17/2016-05-17-hexo3/" data-id="ciobg8lsu002dfovd07451bcm" class="article-share-link">Share</a>
       
         <a href="http://viggoz.com/2016/05/17/2016-05-17-hexo3/#disqus_thread" class="article-comment-link">Comments</a>
       
       
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+
     </footer>
   </div>
   
@@ -247,7 +225,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/05/17/2016-05-17-用户体验部门/" data-id="ciobe0csb0028v4vdnxsqa4qk" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/05/17/2016-05-17-用户体验部门/" data-id="ciobg8lsv002gfovdj5by5qet" class="article-share-link">Share</a>
       
         <a href="http://viggoz.com/2016/05/17/2016-05-17-用户体验部门/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -294,7 +272,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/05/15/2016-05-15-pic毕业季/" data-id="ciobe0crp0021v4vdtuvqrue3" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/05/15/2016-05-15-pic毕业季/" data-id="ciobg8lss0029fovdkcdr319j" class="article-share-link">Share</a>
       
         <a href="http://viggoz.com/2016/05/15/2016-05-15-pic毕业季/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -343,7 +321,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/05/15/2016-05-14-pic宝爷/" data-id="ciobe0crp001yv4vd6yjuh40j" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/05/15/2016-05-14-pic宝爷/" data-id="ciobg8lsp0026fovd8e28a5s7" class="article-share-link">Share</a>
       
         <a href="http://viggoz.com/2016/05/15/2016-05-14-pic宝爷/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -392,7 +370,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/05/04/2016-05-04-关于用户体验设计相关职业 - 副本/" data-id="ciobe0crp001qv4vd32sdd1sb" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/05/04/2016-05-04-关于用户体验设计相关职业 - 副本/" data-id="ciobg8lsd001tfovdnph3jkuy" class="article-share-link">Share</a>
       
         <a href="http://viggoz.com/2016/05/04/2016-05-04-关于用户体验设计相关职业 - 副本/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -440,7 +418,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/05/01/2016-05-1-cat/" data-id="ciobe0crp001tv4vdnd889v1x" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/05/01/2016-05-1-cat/" data-id="ciobg8lsm0021fovd4evxakh3" class="article-share-link">Share</a>
       
         <a href="http://viggoz.com/2016/05/01/2016-05-1-cat/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -472,7 +450,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/23/2016-04-23-Mac-hexo(2)/">Hexo-Mac入门教程(2)-Git托管静态页面</a>
+      <a class="article-title" href="/2016/04/23/2016-04-23-Mac-hexo(2)/">Hexo(2)-Git托管静态页面-Mac</a>
     </h1>
   
 
@@ -490,7 +468,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/" data-id="ciobe0crp001lv4vdpk3je3rf" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/" data-id="ciobg8lsi001yfovdbdg9c6ur" class="article-share-link">Share</a>
       
         <a href="http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -522,7 +500,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/22/2016-04-22-Mac-hexo/">Hexo-Mac入门教程(1)-生成本地静态博客</a>
+      <a class="article-title" href="/2016/04/22/2016-04-22-Mac-hexo/">Hexo(1)-生成本地静态博客-Mac</a>
     </h1>
   
 
@@ -540,7 +518,7 @@ ga('send', 'pageview');
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/04/22/2016-04-22-Mac-hexo/" data-id="ciobe0cr9001iv4vdvoje1kc6" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/04/22/2016-04-22-Mac-hexo/" data-id="ciobg8lsb001qfovdd43co8g6" class="article-share-link">Share</a>
       
         <a href="http://viggoz.com/2016/04/22/2016-04-22-Mac-hexo/#disqus_thread" class="article-comment-link">Comments</a>
       
@@ -554,9 +532,9 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-2016-04-20-原研哉：为什么设计（2）" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-2016-04-20-为什么设计（2）" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/04/20/2016-04-20-原研哉：为什么设计（2）/" class="article-date">
+    <a href="/2016/04/20/2016-04-20-为什么设计（2）/" class="article-date">
   <time datetime="2016-04-20T14:27:29.000Z" itemprop="datePublished">2016-04-20</time>
 </a>
     
@@ -572,7 +550,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/20/2016-04-20-原研哉：为什么设计（2）/">记：《为什么设计》(2)</a>
+      <a class="article-title" href="/2016/04/20/2016-04-20-为什么设计（2）/">为什么设计(2)</a>
     </h1>
   
 
@@ -585,18 +563,18 @@ ga('send', 'pageview');
 <p>最近看的一本书《为什么设计–原研哉对谈阿部雅世》写一些摘录和感想。文章没有什么逻辑，只是所见与所感。</p>
         
           <p class="article-more-link">
-            <a href="/2016/04/20/2016-04-20-原研哉：为什么设计（2）/#more">Read More</a>
+            <a href="/2016/04/20/2016-04-20-为什么设计（2）/#more">Read More</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/04/20/2016-04-20-原研哉：为什么设计（2）/" data-id="ciobe0cr9001fv4vddr2us3lo" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/04/20/2016-04-20-为什么设计（2）/" data-id="ciobgsbjj003gfovd7lb4cgo1" class="article-share-link">Share</a>
       
-        <a href="http://viggoz.com/2016/04/20/2016-04-20-原研哉：为什么设计（2）/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://viggoz.com/2016/04/20/2016-04-20-为什么设计（2）/#disqus_thread" class="article-comment-link">Comments</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Writing/">Writing</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Reading/">Reading</a></li></ul>
 
     </footer>
   </div>
@@ -605,9 +583,9 @@ ga('send', 'pageview');
 
 
   
-    <article id="post-2016-04-19-原研哉：为什么设计（1）" class="article article-type-post" itemscope itemprop="blogPost">
+    <article id="post-2016-04-19-为什么设计（1）" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/04/19/2016-04-19-原研哉：为什么设计（1）/" class="article-date">
+    <a href="/2016/04/19/2016-04-19-为什么设计（1）/" class="article-date">
   <time datetime="2016-04-19T12:27:29.000Z" itemprop="datePublished">2016-04-19</time>
 </a>
     
@@ -623,7 +601,7 @@ ga('send', 'pageview');
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2016/04/19/2016-04-19-原研哉：为什么设计（1）/">记：《为什么设计》(1)</a>
+      <a class="article-title" href="/2016/04/19/2016-04-19-为什么设计（1）/">为什么设计(1)</a>
     </h1>
   
 
@@ -635,18 +613,18 @@ ga('send', 'pageview');
 <p>最近看的一本书《为什么设计–原研哉对谈阿部雅世》写一些摘录和感想。文章没有什么逻辑，只是所见与所感。</p>
         
           <p class="article-more-link">
-            <a href="/2016/04/19/2016-04-19-原研哉：为什么设计（1）/#more">Read More</a>
+            <a href="/2016/04/19/2016-04-19-为什么设计（1）/#more">Read More</a>
           </p>
         
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://viggoz.com/2016/04/19/2016-04-19-原研哉：为什么设计（1）/" data-id="ciobe0cr9001cv4vdecn0jaxk" class="article-share-link">Share</a>
+      <a data-url="http://viggoz.com/2016/04/19/2016-04-19-为什么设计（1）/" data-id="ciobgs943003dfovdgg9enddm" class="article-share-link">Share</a>
       
-        <a href="http://viggoz.com/2016/04/19/2016-04-19-原研哉：为什么设计（1）/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://viggoz.com/2016/04/19/2016-04-19-为什么设计（1）/#disqus_thread" class="article-comment-link">Comments</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Writing/">Writing</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Reading/">Reading</a></li></ul>
 
     </footer>
   </div>
