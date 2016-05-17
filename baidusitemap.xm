@@ -4,12 +4,72 @@
 
     
   <url>
-    <loc>http://viggoz.com/2016/04/22/2016-04-22-Mac-hexo/</loc>
-    <lastmod>2016-05-17T03:03:42.148Z</lastmod>
+    <loc>http://viggoz.com/2016/04/13/2016-04-13-%E5%85%B3%E4%BA%8E%E8%AF%B7%E5%81%B7%E8%B5%B0%E6%B5%B7%E6%8A%A5/</loc>
+    <lastmod>2016-05-17T03:18:21.936Z</lastmod>
     <data>
         <display>
-        <title>Hexo-Mac入门教程(1)-生成本地静态博客</title>
-        <pubTime>2016-04-22T03:04:51.000Z</pubTime>
+        <title>读：请偷走海报</title>
+        <pubTime>2016-04-12T17:35:34.000Z</pubTime>
+        
+        <tag>Reading</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://viggoz.com/2016/04/20/2016-04-20-%E5%8E%9F%E7%A0%94%E5%93%89%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%882%EF%BC%89/</loc>
+    <lastmod>2016-05-17T03:18:19.733Z</lastmod>
+    <data>
+        <display>
+        <title>记：《为什么设计》(2)</title>
+        <pubTime>2016-04-20T14:27:29.000Z</pubTime>
+        
+        <tag>Writing</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://viggoz.com/2016/04/19/2016-04-19-%E5%8E%9F%E7%A0%94%E5%93%89%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%881%EF%BC%89/</loc>
+    <lastmod>2016-05-17T03:17:58.098Z</lastmod>
+    <data>
+        <display>
+        <title>记：《为什么设计》(1)</title>
+        <pubTime>2016-04-19T12:27:29.000Z</pubTime>
+        
+        <tag>Writing</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/</loc>
+    <lastmod>2016-05-17T03:07:25.932Z</lastmod>
+    <data>
+        <display>
+        <title>Hexo-Mac入门教程(2)-Git托管静态页面</title>
+        <pubTime>2016-04-23T08:57:51.000Z</pubTime>
         
         <tag>Hexo</tag>
          
@@ -24,12 +84,12 @@
 
     
   <url>
-    <loc>http://viggoz.com/2016/04/23/2016-04-23-Mac-hexo(2)/</loc>
-    <lastmod>2016-05-17T03:03:40.916Z</lastmod>
+    <loc>http://viggoz.com/2016/04/22/2016-04-22-Mac-hexo/</loc>
+    <lastmod>2016-05-17T03:07:18.978Z</lastmod>
     <data>
         <display>
-        <title>Hexo-Mac入门教程(2)-Git托管静态页面</title>
-        <pubTime>2016-04-23T08:57:51.000Z</pubTime>
+        <title>Hexo-Mac入门教程(1)-生成本地静态博客</title>
+        <pubTime>2016-04-22T03:04:51.000Z</pubTime>
         
         <tag>Hexo</tag>
          
@@ -323,26 +383,6 @@
 
     
   <url>
-    <loc>http://viggoz.com/2016/04/13/2016-04-13-%E5%85%B3%E4%BA%8E%E8%AF%B7%E5%81%B7%E8%B5%B0%E6%B5%B7%E6%8A%A5/</loc>
-    <lastmod>2016-05-14T17:57:48.306Z</lastmod>
-    <data>
-        <display>
-        <title>读：请偷走海报</title>
-        <pubTime>2016-04-12T17:35:34.000Z</pubTime>
-        
-        <tag>Reading</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://viggoz.com/2016/04/14/2016-04-14-%E5%85%B3%E4%BA%8E%E6%91%84%E5%BD%B1/</loc>
     <lastmod>2016-05-14T17:57:13.253Z</lastmod>
     <data>
@@ -369,46 +409,6 @@
         <display>
         <title>常用网站A-Z</title>
         <pubTime>2016-04-15T13:00:33.000Z</pubTime>
-        
-        <tag>Writing</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://viggoz.com/2016/04/20/2016-04-20-%E5%8E%9F%E7%A0%94%E5%93%89%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%882%EF%BC%89/</loc>
-    <lastmod>2016-05-14T17:55:28.952Z</lastmod>
-    <data>
-        <display>
-        <title>记：《为什么设计》(2)</title>
-        <pubTime>2016-04-20T14:27:29.000Z</pubTime>
-        
-        <tag>Writing</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年4月" url="http://viggoz.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://viggoz.com/2016/04/19/2016-04-19-%E5%8E%9F%E7%A0%94%E5%93%89%EF%BC%9A%E4%B8%BA%E4%BB%80%E4%B9%88%E8%AE%BE%E8%AE%A1%EF%BC%881%EF%BC%89/</loc>
-    <lastmod>2016-05-14T17:55:16.195Z</lastmod>
-    <data>
-        <display>
-        <title>记：《为什么设计》(1)</title>
-        <pubTime>2016-04-19T12:27:29.000Z</pubTime>
         
         <tag>Writing</tag>
          
