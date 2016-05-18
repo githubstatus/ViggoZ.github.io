@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>hexo(3)-生成sitemap站点地图 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="百度+谷歌都无法搜索到我的博客 不能忍">
+<meta property="og:type" content="article">
+<meta property="og:title" content="hexo(3)-生成sitemap站点地图">
+<meta property="og:url" content="http://yoursite.com/2016/05/17/2016-05-17-hexo3/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="百度+谷歌都无法搜索到我的博客 不能忍">
+<meta property="og:image" content="https://viggoz.github.io/img/cd/hexo.jpg">
+<meta property="og:image" content="https://viggoz.github.io/img/0517/1.jpg">
+<meta property="og:image" content="https://viggoz.github.io/img/0517/2.jpg">
+<meta property="og:image" content="https://viggoz.github.io/img/0517/3.jpg">
+<meta property="og:image" content="https://viggoz.github.io/img/0517/4.jpg">
+<meta property="og:image" content="https://viggoz.github.io/img/0517/5.png">
+<meta property="og:image" content="https://viggoz.github.io/img/0517/googleSitemap.jpg">
+<meta property="og:updated_time" content="2016-05-17T13:10:45.430Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="hexo(3)-生成sitemap站点地图">
+<meta name="twitter:description" content="百度+谷歌都无法搜索到我的博客 不能忍">
+<meta name="twitter:image" content="https://viggoz.github.io/img/cd/hexo.jpg">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  <!-- <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'> -->
+  <!-- <link href="//fonts.googleapis.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css"> -->
+  <link href="//fonts.useso.com/css?family=Source+Code+Pro:400,700" rel="stylesheet" type="text/css">
+  <link href='//fonts.useso.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/style.css">
+  
+
+</head>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="header-outer" class="outer">
+    <a href="/" class="logo">Hexo</a>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/about/index.html">About</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+        </div>
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        
+        
+          <a id="nav-github-link" class="nav-icon" href="https://github.com/ppoffice/hexo-theme-alex" title="Fork me on GitHub"></a>
+        
+      </nav>
+    </div>
+  </div>
+</header>
+      <nav id="mobile-nav" class="off">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/about/index.html" class="mobile-nav-link">About</a>
+  
+  <div id="search-form-wrap-mobile">
+    <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" results="0" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://yoursite.com"></form>
+  </div>
+</nav>
+      <div class="outer">
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/2015年12月/">2015年12月</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/2015年6月/">2015年6月</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/2015年9月/">2015年9月</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/2016年1月/">2016年1月</a><span class="category-list-count">1</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/2016年3月/">2016年3月</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/2016年4月/">2016年4月</a><span class="category-list-count">13</span></li><li class="category-list-item"><a class="category-list-link" href="/categories/2016年5月/">2016年5月</a><span class="category-list-count">6</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a><span class="archive-list-count">13</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a><span class="archive-list-count">1</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recents</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2016/05/17/2016-05-17-hexo3/">hexo(3)-生成sitemap站点地图</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/17/2016-05-17-用户体验部门/">用户体验入门心得</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/15/2016-05-15-pic毕业季/">毕业季</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/15/2016-05-14-pic宝爷/">宝爷</a>
+          </li>
+        
+          <li>
+            <a href="/2016/05/04/2016-05-04-关于用户体验设计相关职业 - 副本/">用户体验设计入门必知</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Music/">Music</a><span class="tag-list-count">2</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Photo/">Photo</a><span class="tag-list-count">13</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Reading/">Reading</a><span class="tag-list-count">3</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Writing/">Writing</a><span class="tag-list-count">3</span></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Hexo/" style="font-size: 15px;">Hexo</a> <a href="/tags/Music/" style="font-size: 10px;">Music</a> <a href="/tags/Photo/" style="font-size: 20px;">Photo</a> <a href="/tags/Reading/" style="font-size: 15px;">Reading</a> <a href="/tags/Writing/" style="font-size: 15px;">Writing</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">links</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="http://hexo.io">Hexo</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+        <section id="main"><article id="post-2016-05-17-hexo3" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2016/05/17/2016-05-17-hexo3/" class="article-date">
+  <time datetime="2016-05-17T11:52:24.000Z" itemprop="datePublished">2016-05-17</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/2016年5月/">2016年5月</a>
+  </div>
+
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      hexo(3)-生成sitemap站点地图
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><img src="https://viggoz.github.io/img/cd/hexo.jpg" alt=""><br>百度+谷歌都无法搜索到我的博客 不能忍<br><a id="more"></a></p>
+<h2 id="1-先确认博客是否被收录"><a href="#1-先确认博客是否被收录" class="headerlink" title="1.先确认博客是否被收录"></a>1.先确认博客是否被收录</h2><p>在百度或者谷歌上面输入下面格式来判断，如果能搜索到就说明被收录，否则就没有。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">site:viggoz.com</span><br></pre></td></tr></table></figure></p>
+<p> <img src="https://viggoz.github.io/img/0517/1.jpg" alt=""></p>
+<h2 id="2-创建站点地图文件"><a href="#2-创建站点地图文件" class="headerlink" title="2.创建站点地图文件"></a>2.创建站点地图文件</h2><p>站点地图是一种文件，您可以通过该文件列出您网站上的网页，从而将您网站内容的组织架构告知Google和其他搜索引擎。搜索引擎网页抓取工具会读取此文件，以便更加智能地抓取您的网站。</p>
+<ul>
+<li><p>先安装一下，打开你的hexo博客根目录，分别用下面两个命令来安装针对谷歌和百度的插件</p>
+<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line">npm install hexo-generator-baidu-sitemap --save</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在博客目录的_config.yml中添加如下代码</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">Plugins:</span><br><span class="line">- hexo-generator-baidu-sitemap</span><br><span class="line">- hexo-generator-sitemap</span><br><span class="line"></span><br><span class="line">baidusitemap:</span><br><span class="line">    path: baidusitemap.xml</span><br><span class="line">sitemap:</span><br><span class="line">    path: sitemap.xml</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<p>在你的博客根目录的public下面发现生成了sitemap.xml以及baidusitemap.xml就表示成功了</p>
+<h2 id="3-让百度收录我们的博客"><a href="#3-让百度收录我们的博客" class="headerlink" title="3.让百度收录我们的博客"></a>3.让百度收录我们的博客</h2><p><strong>验证网站</strong></p>
+<ul>
+<li>为什么要验证网站<br>站长平台推荐站长添加主站（您网站的链接也许会使用www 和非 www 两种网址，建议添加用户能够真实访问到的网址），添加并验证后，可证明您是该域名的拥有者，可以快捷批量添加子站点，查看所有子站数据，无需再一一验证您的子站点。</li>
+<li>如何验证网站<br>首先如果您的网站已使用了百度统计，您可以使用统计账号登录平台，或者绑定站长平台与百度统计账号，站长平台支持您批量导入百度统计中的站点，您不需要再对网站进行验证。<br>百度站长平台为未使用百度统计的站点提供三种验证方式：文件验证、html标签验证、CNAME验证。</li>
+</ul>
+<p>验证完成后，将会认为您是网站的拥有者。为使您的网站一直保持验证通过的状态，请保留验证的文件、html标签或CNAME记录，会去定期检查验证记录。</p>
+<p>这里演示<a href="http://zhanzhang.baidu.com/dashboard/index" target="_blank" rel="external">百度站长平台</a><br>输入你的网址<br><img src="https://viggoz.github.io/img/0517/2.jpg" alt=""><br>这里推荐使用文件验证。下载文件放到Hexo\public目录下即可<br><img src="https://viggoz.github.io/img/0517/3.jpg" alt=""><br><strong>链接提交</strong><br>上面步骤成功后，进入站点管理，选择<strong>网页抓取</strong>——<strong>链接提交</strong></p>
+<p>这里推荐自动推送和sitemap<br>从效率上来说：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">主动推送&gt;自动推送&gt;sitemap</span><br></pre></td></tr></table></figure></p>
+<p><strong>自动推送</strong><br>自动推送很简单，就是在你代码里面嵌入自动推送JS代码，在页面被访问时，页面URL将立即被推送给百度<br>复制代码到下面目录文件里就好添加到下面就行。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">\themes\xxxx\layout\_partial\after_footer.ejs</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://viggoz.github.io/img/0517/4.jpg" alt=""></p>
+<p><strong>sitemap提交</strong><br>直接提交就行<br><img src="https://viggoz.github.io/img/0517/5.png" alt=""></p>
+<p>如何选择链接提交方式<br>1、主动推送：最为快速的提交方式，推荐您将站点当天新产出链接立即通过此方式推送给百度，以保证新链接可以及时被百度收录。<br>2、自动推送：最为便捷的提交方式，请将自动推送的JS代码部署在站点的每一个页面源代码中，部署代码的页面在每次被浏览时，链接会被自动推送给百度。可以与主动推送配合使用。<br>3、sitemap：您可以定期将网站链接放到sitemap中，然后将sitemap提交给百度。百度会周期性的抓取检查您提交的sitemap，对其中的链接进行处理，但收录速度慢于主动推送。<br>4、手动提交：一次性提交链接给百度，可以使用此种方式。</p>
+<h2 id="4-谷歌收录我们的博客"><a href="#4-谷歌收录我们的博客" class="headerlink" title="4.谷歌收录我们的博客"></a>4.谷歌收录我们的博客</h2><p>谷歌操作比较简单，就是向<a href="https://www.google.com/webmasters/tools" target="_blank" rel="external">Google站长工具</a>提交sitemap<br>登录Google账号，添加了站点验证通过后，选择站点，之后在<strong>抓取</strong>——<strong>站点地图</strong>——<strong>添加/测试站点地图</strong>，如下图：<br> <img src="https://viggoz.github.io/img/0517/googleSitemap.jpg" alt=""></p>
+<p>谷歌我提交立马就能搜索到我的博客了，效率很高。</p>
+<p><strong>参考文章</strong></p>
+<ul>
+<li><a href="http://www.jianshu.com/p/619dab2d3c08#" target="_blank" rel="external">嘟嘟MD（简书作者）</a></li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://yoursite.com/2016/05/17/2016-05-17-hexo3/" data-id="ciocg7ofz002au4vd5h7zurl2" class="article-share-link">Share</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2016/05/17/2016-05-17-用户体验部门/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">用户体验入门心得</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      <a href="/" class="logo">Hexo</a>
+      &copy; 2016 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+
+<script src="/js/jquery.min.js"></script>
+<script src="/js/jquery.scrollLoading.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
