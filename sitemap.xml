@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2016/05/17/2016-05-17-hexo3/</loc>
+    
+    <lastmod>2016-05-22T10:54:34.832Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2016/03/15/2016-03-15-pic%E5%B0%A7%E5%93%A5/</loc>
     
     <lastmod>2016-05-22T10:50:08.894Z</lastmod>
@@ -12,13 +19,6 @@
     <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2016-05-22T10:45:30.080Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2016/05/17/2016-05-17-hexo3/</loc>
-    
-    <lastmod>2016-05-22T10:42:03.306Z</lastmod>
     
   </url>
   

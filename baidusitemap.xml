@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/05/17/2016-05-17-hexo3/</loc>
+    <lastmod>2016-05-22T10:54:34.832Z</lastmod>
+    <data>
+        <display>
+        <title>hexo(3)-生成sitemap站点地图</title>
+        <pubTime>2016-05-17T11:52:24.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年5月" url="http://yoursite.com/categories/2016%E5%B9%B45%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/03/15/2016-03-15-pic%E5%B0%A7%E5%93%A5/</loc>
     <lastmod>2016-05-22T10:50:08.894Z</lastmod>
     <data>
@@ -23,26 +43,6 @@
     </url>
 
     
-    
-  <url>
-    <loc>http://yoursite.com/2016/05/17/2016-05-17-hexo3/</loc>
-    <lastmod>2016-05-22T10:42:03.306Z</lastmod>
-    <data>
-        <display>
-        <title>hexo(3)-生成sitemap站点地图</title>
-        <pubTime>2016-05-17T11:52:24.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年5月" url="http://yoursite.com/categories/2016%E5%B9%B45%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
     
   <url>
     <loc>http://yoursite.com/2016/01/19/2016-04-18-%E5%B0%8F%E6%9C%8B%E5%8F%8B/</loc>
