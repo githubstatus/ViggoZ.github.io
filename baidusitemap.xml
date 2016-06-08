@@ -4,8 +4,70 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/06/05/2016-06-05-sublimeText/</loc>
+    <lastmod>2016-06-08T09:56:17.000Z</lastmod>
+    <data>
+        <display>
+        <title>SublimeText-几个常用的插件</title>
+        <pubTime>2016-06-05T12:40:19.000Z</pubTime>
+        
+        <tag>Sunlime text</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年6月" url="http://yoursite.com/categories/2016%E5%B9%B46%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2015/06/28/2015-06-28-cat0/</loc>
+    <lastmod>2016-06-08T09:56:07.000Z</lastmod>
+    <data>
+        <display>
+        <title>Cat</title>
+        <pubTime>2015-06-28T15:40:19.000Z</pubTime>
+        
+        <tag>Photo</tag>
+         
+         
+           
+             
+              <breadCrumb title="2015年6月" url="http://yoursite.com/categories/2015%E5%B9%B46%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/06/06/2016-06-06-%E5%BA%A6%E7%9D%BFVis/</loc>
+    <lastmod>2016-06-08T09:56:03.000Z</lastmod>
+    <data>
+        <display>
+        <title>度睿VIS</title>
+        <pubTime>2016-06-06T15:05:40.000Z</pubTime>
+        
+        <tag>design</tag>
+         
+        <tag>VIS</tag>
+         
+         
+           
+             
+              <breadCrumb title="2015年11月" url="http://yoursite.com/categories/2015%E5%B9%B411%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/06/08/2016-06-08-DaxuejiaLOGO/</loc>
-    <lastmod>2016-06-08T03:12:19.000Z</lastmod>
+    <lastmod>2016-06-08T09:52:51.000Z</lastmod>
     <data>
         <display>
         <title>DaxuejiaLOGO</title>
@@ -98,48 +160,6 @@
         <display>
         <title>FireHorseVIS</title>
         <pubTime>2016-06-07T17:07:35.000Z</pubTime>
-        
-        <tag>design</tag>
-         
-        <tag>VIS</tag>
-         
-         
-           
-             
-              <breadCrumb title="2015年11月" url="http://yoursite.com/categories/2015%E5%B9%B411%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/06/05/2016-06-05-sublimeText/</loc>
-    <lastmod>2016-06-07T16:57:33.000Z</lastmod>
-    <data>
-        <display>
-        <title>SublimeText-几个常用的插件</title>
-        <pubTime>2016-06-05T12:40:19.000Z</pubTime>
-        
-        <tag>Sunlime text</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年6月" url="http://yoursite.com/categories/2016%E5%B9%B46%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/06/06/2016-06-06-%E5%BA%A6%E7%9D%BFVis/</loc>
-    <lastmod>2016-06-07T16:56:21.000Z</lastmod>
-    <data>
-        <display>
-        <title>度睿VIS</title>
-        <pubTime>2016-06-06T15:05:40.000Z</pubTime>
         
         <tag>design</tag>
          
@@ -432,26 +452,6 @@
            
              
               <breadCrumb title="2016年4月" url="http://yoursite.com/categories/2016%E5%B9%B44%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2015/06/28/2015-06-28-cat0/</loc>
-    <lastmod>2016-05-17T05:21:54.000Z</lastmod>
-    <data>
-        <display>
-        <title>Cat</title>
-        <pubTime>2015-06-28T15:40:19.000Z</pubTime>
-        
-        <tag>Photo</tag>
-         
-         
-           
-             
-              <breadCrumb title="2015年6月" url="http://yoursite.com/categories/2015%E5%B9%B46%E6%9C%88/"/>
           
         </display>
     </data>
