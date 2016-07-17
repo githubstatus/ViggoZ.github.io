@@ -4,6 +4,84 @@
 
     
   <url>
+    <loc>http://yoursite.com/2016/06/16/2016-06-16-FED-guide1/</loc>
+    <lastmod>2016-07-17T02:48:00.000Z</lastmod>
+    <data>
+        <display>
+        <title>icepy/Front-End-Develop-Guide-前端开发指南</title>
+        <pubTime>2016-06-16T03:30:32.000Z</pubTime>
+        
+        <tag>FED</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年6月" url="http://yoursite.com/categories/2016%E5%B9%B46%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/17/2016-07-17-brew/</loc>
+    <lastmod>2016-07-17T02:37:39.000Z</lastmod>
+    <data>
+        <display>
+        <title>Homebrew Cask</title>
+        <pubTime>2016-07-17T00:06:42.000Z</pubTime>
+        
+        <tag>Mac</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/07/12/2016-07-12-coder/</loc>
+    <lastmod>2016-07-12T08:22:01.000Z</lastmod>
+    <data>
+        <display>
+        <title>2016-07-12-ScrollTrigger</title>
+        <pubTime>2016-07-12T08:06:42.000Z</pubTime>
+        
+        <tag>HTML</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/06/08/2016-06-08-DaxuejiaLOGO/</loc>
+    <lastmod>2016-07-12T08:20:32.000Z</lastmod>
+    <data>
+        <display>
+        <title>DaxuejiaLOGO</title>
+        <pubTime>2016-06-08T02:59:32.000Z</pubTime>
+        
+        <tag>design</tag>
+         
+        <tag>VIS</tag>
+         
+        <tag>LOGO</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年3月" url="http://yoursite.com/categories/2016%E5%B9%B43%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/06/16/2016-06-16-FED-7-Native%E7%94%9F%E6%80%81-%E6%8E%A2%E7%B4%A2%E5%AD%A6%E4%B9%A0/</loc>
     <lastmod>2016-06-16T03:58:02.000Z</lastmod>
     <data>
@@ -30,106 +108,6 @@
         <display>
         <title>Awsome The FED Guide-6-Featured</title>
         <pubTime>2016-06-16T03:36:32.000Z</pubTime>
-        
-        <tag>FED</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年6月" url="http://yoursite.com/categories/2016%E5%B9%B46%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/06/16/2016-06-16-FED-guide5-Featured-Articles/</loc>
-    <lastmod>2016-06-16T03:57:49.000Z</lastmod>
-    <data>
-        <display>
-        <title>Awsome The FED Guide-5-Featured-Articles</title>
-        <pubTime>2016-06-16T03:35:32.000Z</pubTime>
-        
-        <tag>FED</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年6月" url="http://yoursite.com/categories/2016%E5%B9%B46%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/06/16/2016-06-16-FED-guide4-community/</loc>
-    <lastmod>2016-06-16T03:57:43.000Z</lastmod>
-    <data>
-        <display>
-        <title>Awsome The FED Guide-4-community</title>
-        <pubTime>2016-06-16T03:34:32.000Z</pubTime>
-        
-        <tag>FED</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年6月" url="http://yoursite.com/categories/2016%E5%B9%B46%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/06/16/2016-06-16-FED-guide3-Articles/</loc>
-    <lastmod>2016-06-16T03:57:36.000Z</lastmod>
-    <data>
-        <display>
-        <title>Awsome The FED Guide-3-Articles</title>
-        <pubTime>2016-06-16T03:33:32.000Z</pubTime>
-        
-        <tag>FED</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年6月" url="http://yoursite.com/categories/2016%E5%B9%B46%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/06/16/2016-06-16-FED-guide2-2015letter/</loc>
-    <lastmod>2016-06-16T03:57:26.000Z</lastmod>
-    <data>
-        <display>
-        <title>Awsome The FED Guide-2-2015letter</title>
-        <pubTime>2016-06-16T03:31:32.000Z</pubTime>
-        
-        <tag>FED</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年6月" url="http://yoursite.com/categories/2016%E5%B9%B46%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/06/16/2016-06-16-FED-guide1/</loc>
-    <lastmod>2016-06-16T03:57:11.000Z</lastmod>
-    <data>
-        <display>
-        <title>Awsome The FED Guide-1-前端开发指南</title>
-        <pubTime>2016-06-16T03:30:32.000Z</pubTime>
         
         <tag>FED</tag>
          
@@ -199,30 +177,6 @@
            
              
               <breadCrumb title="2015年11月" url="http://yoursite.com/categories/2015%E5%B9%B411%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2016/06/08/2016-06-08-DaxuejiaLOGO/</loc>
-    <lastmod>2016-06-08T09:52:51.000Z</lastmod>
-    <data>
-        <display>
-        <title>DaxuejiaLOGO</title>
-        <pubTime>2016-06-08T02:59:32.000Z</pubTime>
-        
-        <tag>design</tag>
-         
-        <tag>LOGO</tag>
-         
-        <tag>VIS</tag>
-         
-         
-           
-             
-              <breadCrumb title="2016年3月" url="http://yoursite.com/categories/2016%E5%B9%B43%E6%9C%88/"/>
           
         </display>
     </data>
