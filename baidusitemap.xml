@@ -4,12 +4,12 @@
 
     
   <url>
-    <loc>http://yoursite.com/2016/11/04/2016-11-04-viggo-2016/</loc>
-    <lastmod>2016-11-16T10:24:16.000Z</lastmod>
+    <loc>http://yoursite.com/2016/11/18/2016-11-18-video/</loc>
+    <lastmod>2016-11-18T15:09:58.000Z</lastmod>
     <data>
         <display>
-        <title>Viggo作品集</title>
-        <pubTime>2016-11-04T03:09:19.000Z</pubTime>
+        <title>我能做个快乐的人</title>
+        <pubTime>2016-11-18T15:09:19.000Z</pubTime>
         
         <tag>Photo</tag>
          
@@ -25,11 +25,31 @@
     
   <url>
     <loc>http://yoursite.com/2016/11/08/2016-11-08-shenzhen/</loc>
-    <lastmod>2016-11-08T18:30:59.000Z</lastmod>
+    <lastmod>2016-11-18T15:03:20.000Z</lastmod>
     <data>
         <display>
         <title>深圳国际工业设计大展</title>
         <pubTime>2016-11-08T15:09:19.000Z</pubTime>
+        
+        <tag>Photo</tag>
+         
+         
+           
+             
+              <breadCrumb title="2016年11月" url="http://yoursite.com/categories/2016%E5%B9%B411%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2016/11/04/2016-11-04-viggo-2016/</loc>
+    <lastmod>2016-11-16T10:24:16.000Z</lastmod>
+    <data>
+        <display>
+        <title>Viggo作品集</title>
+        <pubTime>2016-11-04T03:09:19.000Z</pubTime>
         
         <tag>Photo</tag>
          
