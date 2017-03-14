@@ -4,8 +4,48 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/02/17/2017-02-17-sket/</loc>
+    <lastmod>2017-03-14T14:10:54.000Z</lastmod>
+    <data>
+        <display>
+        <title>Skating！</title>
+        <pubTime>2017-02-17T15:09:19.000Z</pubTime>
+        
+        <tag>Photo</tag>
+         
+         
+           
+             
+              <breadCrumb title="2017年2月" url="http://yoursite.com/categories/2017%E5%B9%B42%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2015/09/24/2015-09-24-%E6%99%9A%E4%BC%9A/</loc>
+    <lastmod>2017-03-14T13:50:53.000Z</lastmod>
+    <data>
+        <display>
+        <title>Prom</title>
+        <pubTime>2015-09-24T15:40:19.000Z</pubTime>
+        
+        <tag>Photo</tag>
+         
+         
+           
+             
+              <breadCrumb title="2015年9月" url="http://yoursite.com/categories/2015%E5%B9%B49%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2016/12/06/2016-12-06-SCBC/</loc>
-    <lastmod>2016-12-06T13:38:27.000Z</lastmod>
+    <lastmod>2016-12-11T15:23:24.000Z</lastmod>
     <data>
         <display>
         <title>Best wishes to you！</title>
@@ -202,9 +242,9 @@
         <title>DaxuejiaLOGO</title>
         <pubTime>2016-06-08T02:59:32.000Z</pubTime>
         
-        <tag>VIS</tag>
-         
         <tag>design</tag>
+         
+        <tag>VIS</tag>
          
         <tag>LOGO</tag>
          
@@ -266,9 +306,9 @@
         <title>度睿VIS</title>
         <pubTime>2016-06-06T15:05:40.000Z</pubTime>
         
-        <tag>VIS</tag>
-         
         <tag>design</tag>
+         
+        <tag>VIS</tag>
          
          
            
@@ -352,9 +392,9 @@
         <title>FireHorseVIS</title>
         <pubTime>2016-06-07T17:07:35.000Z</pubTime>
         
-        <tag>VIS</tag>
-         
         <tag>design</tag>
+         
+        <tag>VIS</tag>
          
          
            
@@ -374,9 +414,9 @@
         <title>聚融易贷VIS</title>
         <pubTime>2016-06-07T11:21:40.000Z</pubTime>
         
-        <tag>VIS</tag>
-         
         <tag>design</tag>
+         
+        <tag>VIS</tag>
          
          
            
@@ -763,26 +803,6 @@
            
              
               <breadCrumb title="2016年3月" url="http://yoursite.com/categories/2016%E5%B9%B43%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2015/09/24/2015-09-24-%E6%99%9A%E4%BC%9A/</loc>
-    <lastmod>2016-05-15T06:47:33.000Z</lastmod>
-    <data>
-        <display>
-        <title>Prom</title>
-        <pubTime>2015-09-24T15:40:19.000Z</pubTime>
-        
-        <tag>Photo</tag>
-         
-         
-           
-             
-              <breadCrumb title="2015年9月" url="http://yoursite.com/categories/2015%E5%B9%B49%E6%9C%88/"/>
           
         </display>
     </data>
