@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Xenon Boostrap Admin Panel" />
+    <meta name="author" content="" />
+    <title>Xenon - Horizontal Menu</title>
+    <link rel="stylesheet" href="http://fonts.useso.com/css?family=Arimo:400,700,400italic">
+    <link rel="stylesheet" href="assets/css/fonts/linecons/css/linecons.css">
+    <link rel="stylesheet" href="assets/css/fonts/fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/xenon-core.css">
+    <link rel="stylesheet" href="assets/css/xenon-forms.css">
+    <link rel="stylesheet" href="assets/css/xenon-components.css">
+    <link rel="stylesheet" href="assets/css/xenon-skins.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <link rel="stylesheet" href="assets/css/step.css">
+    <link rel="stylesheet" href="assets/css/freshman.css">
+    <script src="assets/js/jquery-1.11.1.min.js"></script>
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="page-body">
+    <nav class="navbar horizontal-menu navbar-fixed-top">
+        <!-- set fixed position by adding class "navbar-fixed-top" -->
+        <div class="navbar-inner">
+            <!-- Navbar Brand -->
+            <div class="navbar-brand">
+                <a href="freshman-login.html" class="logo">
+                    <img src="assets/images/logo-white-bg@2x.png" width="80" alt="" class="hidden-xs" />
+                    <img src="assets/images/logo@2x.png" width="80" alt="" class="visible-xs" />
+                </a>
+            </div>
+            <!-- Mobile Toggles Links -->
+            <div class="nav navbar-mobile">
+                <!-- This will toggle the mobile menu and will be visible only on mobile devices -->
+                <div class="mobile-menu-toggle">
+                    <a href="#" data-toggle="mobile-menu-horizontal">
+                        <i class="fa-bars"></i>
+                    </a>
+                    <a><i href="javascript:;" onclick="jQuery('#modal-1').modal('show', {backdrop: 'fade'});" class="fa-sign-out"></i></a>
+                </div>
+            </div>
+            <div class="navbar-mobile-clear"></div>
+            <!-- main menu -->
+            <ul class="navbar-nav">
+                <li class="active">
+                    <a href="freshman-student-index.html">
+                        <i class="linecons-desktop"></i>
+                        <span class="title">后台首页</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="freshman-student-archives.html">
+                        <i class="linecons-graduation-cap"></i>
+                        <span class="title">档案管理</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="freshman-student-leave.html">
+                        <i class="linecons-graduation-cap"></i>
+                        <span class="title">请假申请</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="freshman-student-ReserveTeacher.html">
+                        <i class="linecons-doc"></i>
+                        <span class="title">预约辅导员</span>
+                    </a>
+                </li>
+                <li class="opened">
+                    <a href="freshman-student-other.html">
+                        <i class="linecons-cog"></i>
+                        <span class="title">其他信息</span>
+                    </a>
+                    <ul>
+                        <li>
+                            <a href="freshman-student-guide.html">
+                                <span class="title">新生指引</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="freshman-student-school.html">
+                                <span class="title">学校介绍</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="freshman-student-card.html">
+                                <span class="title">饭卡挂失</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav nav-userinfo navbar-right">
+                <li>
+                    <a><i href="javascript:;" onclick="jQuery('#modal-1').modal('show', {backdrop: 'fade'});" class="fa-sign-out"></i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="page-container">
+        <!-- add class "sidebar-collapsed" to close sidebar by default, "chat-visible" to make chat appear always -->
+        <div class="main-content">
+            <script>
+            jQuery(document).ready(function($) {
+                $('a[href="#layout-variants"]').on('click', function(ev) {
+                    ev.preventDefault();
+
+                    var win = {
+                        top: $(window).scrollTop(),
+                        toTop: $("#layout-variants").offset().top - 15
+                    };
+
+                    TweenLite.to(win, .3, {
+                        top: win.toTop,
+                        roundProps: ["top"],
+                        ease: Sine.easeInOut,
+                        onUpdate: function() {
+                            $(window).scrollTop(win.top);
+                        }
+                    });
+                });
+            });
+            </script>
+            
+            <!-- 面板一 -->
+            <div class="row">
+                    <div class="col-sm-6">
+                        
+                        <div class="panel panel-default">
+                        
+                            <div class="panel-heading">
+                                <div class="panel-title">个人信息</div>
+                            </div>
+                            
+                            <div class="panel-body">
+                                <form role="form" class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">姓名</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="张伟" disabled="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">性别</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="男" disabled="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">省份</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="广东省" disabled="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">学院</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="计算机学院" disabled="">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">专业</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control" placeholder="软件开发" disabled="">
+                                </div>
+                            </div>
+                            <br>
+                        </form>
+                                
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                    <div class="col-sm-6">
+                    
+                    <div class="xe-widget xe-vertical-counter xe-vertical-counter-white" data-count=".num" data-from="0" data-to="128" data-duration="4">
+                        <div class="xe-icon">
+                            <i class="linecons-lightbulb"></i>
+                        </div>
+                        
+                        <div class="xe-label">
+                            <strong class="num">Your name</strong>
+                            <span>您还未完成报名,点击进行分班及宿舍分配！</span>
+                            <br>    
+                            <br>
+                            <a href="javascript:;" onclick="jQuery('#modal-6').modal('show', {backdrop: 'static'});" class="btn btn-info btn-single btn-lg">立即分班</a>
+                            <br>
+                            <br>
+                        </div>
+                    </div>
+                    
+                </div>
+                </div>
+            <!-- 面板二 END -->
+        </div>
+    </div>
+
+    <div class="freshman-container">
+        <footer class="freshman-footer fresh-footer-fixed">
+            <div class="freshman-footer-text">
+                &copy; 2017 By
+                <a class="freshman-footer-text" href="#" target="_blank">Viggo & PnR</a>
+            </div>
+        </footer>
+    </div>
+
+
+        <!-- Modal 1 (Basic)-->
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">退出登录</h4>
+                </div>
+                
+                <div class="modal-body">
+                    确定要退出登录吗？!
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">取消</button>
+                    <a href="freshman-login.html"><button type="button" class="btn btn-info" data-dismiss="">退出</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Modal 6 (Long Modal)-->
+    <div class="modal fade" id="modal-6">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="panel-body">
+                            
+                            <p class="lead">分班注意事项说明</p>
+                            
+                            <p>按照您选择的专业录取到相应的学校和学院专业分班， 具有很大的 <strong>随机性.</strong> 新生报到后，很快就会见到你们的班主任了，进入一个班级通常会配给一个辅导员（或叫思政老师），和班主任一样；辅导员负责管理两到三个班级，注意：辅导员只负责生活等（挂科时会找你）。注意要同辅导员处理好关系，这关系到你在大学的发展。</p>
+            
+                            <p>关于本校 <span class="label label-info" data-toggle="tooltip" data-placement="left" title="" data-original-title="转专业具体事项到校了解">转专业</span> 事项，第一条 为充分调动学生的学习积极性，有利于学生的自身发展，学校允许确有专长或有特殊困难的学生转专业。为了规范转专业的实施，结合我校专业学科状况，保证学校正常的教育教学秩序，特制定本实施办法。</p>
+                            <p>第二条 学生一般应当在被录取的专业完成学业，但若确对某一专业有特殊兴趣、学有专长，或者有特殊困难无法在原专业学习，且符合下列条件之一者，<ins>可以申请转专业。</ins></p>
+                            
+                            <p>班级不可更换，部分专业班级会在大二细分专业重新分配。</p>
+                            
+                        </div>
+                <div class="modal-body">
+                
+                    <div class="row">
+                        <div class="col-md-6">
+                            
+                            <div class="form-group">
+                                <label for="field-1" class="control-label">姓名</label>
+                                
+                                <input type="text" class="form-control" id="field-1" placeholder="John" disabled>
+                            </div>  
+                            
+                        </div>
+                        
+                        <div class="col-md-6">
+                            
+                            <div class="form-group">
+                                <label for="field-2" class="control-label">性别</label>
+                                
+                                <input type="text" class="form-control" id="field-2" placeholder="Doe" disabled>
+                            </div>  
+                        
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-md-12">
+                            
+                            <div class="form-group">
+                                <label for="field-3" class="control-label">省份</label>
+                                
+                                <input type="text" class="form-control" id="field-3" placeholder="Address" disabled>
+                            </div>  
+                            
+                        </div>
+                    </div>
+                
+                    <div class="row">
+                        <div class="col-md-6">
+                            
+                            <div class="form-group">
+                                <label for="field-4" class="control-label">学院</label>
+                                
+                                <input type="text" class="form-control" id="field-4" placeholder="Boston" disabled>
+                            </div>  
+                            
+                        </div>
+                        
+                        <div class="col-md-6">
+                            
+                            <div class="form-group">
+                                <label for="field-5" class="control-label">专业</label>
+                                
+                                <input type="text" class="form-control" id="field-5" placeholder="United States" disabled>
+                            </div>  
+                        
+                        </div>
+                    </div>
+                
+                    
+                </div>
+                
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-white" data-dismiss="modal">取消</button>
+                    <a href="javascript:;" onclick="jQuery('#modal-2').modal('show', {backdrop: 'static'});" class="btn btn-info btn-single" data-dismiss="modal">立即分班</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <!-- Modal 1 (Basic)-->
+    <div class="modal fade" id="modal-2">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">班级分配成功！</h4>
+                </div>
+                
+                <div class="modal-body">
+                    您所分配到班级为 17嵌入式A班!
+                </div>
+                
+                <div class="modal-footer">
+<!--                     <button type="button" class="btn btn-white" data-dismiss="modal">取消</button> -->
+                    <a href="javascript:;" onclick="jQuery('#modal-3').modal('show', {backdrop: 'static'});" class="btn btn-info btn-single" data-dismiss="modal">继续分配宿舍</a>
+                </div>
+            </div>
+        </div>
+    </div>
+            <!-- Modal 1 (Basic)-->
+    <div class="modal fade" id="modal-3">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">宿舍分配成功！</h4>
+                </div>
+                
+                <div class="modal-body">
+                    您所分配到宿舍为 114栋323室!
+                </div>
+                
+                <div class="modal-footer">
+<!--                     <button type="button" class="btn btn-white" data-dismiss="modal">取消</button> -->
+                    <a href="javascript:;" onclick="jQuery('#modal-3').modal('show', {backdrop: 'static'});" class="btn btn-info btn-single" data-dismiss="modal">完成</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom Scripts -->
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/TweenMax.min.js"></script>
+    <script src="assets/js/resizeable.js"></script>
+    <script src="assets/js/joinable.js"></script>
+    <script src="assets/js/xenon-api.js"></script>
+    <script src="assets/js/xenon-toggles.js"></script>
+    <!-- 注册流程 -->
+    <!-- Imported scripts on this page -->
+    <script src="assets/js/jquery-validate/jquery.validate.min.js"></script>
+    <script src="assets/js/inputmask/jquery.inputmask.bundle.js"></script>
+    <script src="assets/js/formwizard/jquery.bootstrap.wizard.min.js"></script>
+    <script src="assets/js/datepicker/bootstrap-datepicker.js"></script>
+    <script src="assets/js/multiselect/js/jquery.multi-select.js"></script>
+    <script src="assets/js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="assets/js/selectboxit/jquery.selectBoxIt.min.js"></script>
+    <!-- JavaScripts initializations and stuff -->
+    <script src="assets/js/xenon-custom.js"></script>
+</body>
+
+</html>

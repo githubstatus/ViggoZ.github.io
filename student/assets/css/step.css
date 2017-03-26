@@ -1,0 +1,128 @@
+
+.entering-view {
+/*    background-color: #f8f8f8;
+        overflow-y: scroll;
+*/    
+    height: 100%
+}
+
+.entering-view>.view-inner {
+    position: relative;
+    width: 750px;
+    margin: auto
+}
+
+.entering-view>.view-inner>.view-head {
+    display: block;
+    padding: 30px 80px
+}
+
+.entering-view>.view-inner>.view-head {
+    display: block;
+    padding: 30px 80px
+}
+
+.entering-view>.view-inner>.view-body {
+    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .1);
+    background-color: #fff
+}
+
+.entering-view>.view-inner>.view-head {
+    display: block;
+    padding: 30px 80px
+}
+
+
+
+
+.steps {
+    display: -ms-flexbox;
+    display: flex;
+    padding: 50px 0 20px
+}
+
+.steps .step {
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+    height: 2px;
+    background-color: #eee
+}
+
+.steps .step:first-child {
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px
+}
+
+.steps .step:last-child {
+    width: 0;
+    -ms-flex: inherit;
+    flex: inherit;
+    border-bottom-right-radius: 2px;
+    border-top-right-radius: 2px
+}
+
+.steps .step .step-line {
+    display: block;
+    height: 2px;
+    width: 0;
+    border-radius: 2px;
+    background-color: #59ead5
+}
+
+.steps .step .step-dot {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    top: -3px;
+    left: -4px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #eee
+}
+
+.steps .step .step-title-wrapper {
+    position: absolute;
+    width: 20em;
+    text-align: center;
+    left: -10em;
+    top: -50px
+}
+
+.steps .step .step-title {
+    display: inline-block;
+    word-break: keep-all;
+    white-space: nowrap;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 1em
+}
+
+.steps .step.active .step-dot {
+    width: 16px;
+    height: 16px;
+    top: -7px;
+    left: -8px
+}
+
+.steps .step.active .step-title {
+    font-weight: 500
+}
+
+.steps .step.active .step-dot,
+.steps .step.active .step-line,
+.steps .step.status-complete .step-dot,
+.steps .step.status-complete .step-line {
+    background-color: #3cc8b4
+}
+
+.steps .step.active .step-title,
+.steps .step.status-complete .step-title {
+    color: #3cc8b4
+}
+
+.steps .step.status-complete.active .step-line,
+.steps .step.status-complete .step-line {
+    width: 100%
+}
