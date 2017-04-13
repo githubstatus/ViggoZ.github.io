@@ -3,6 +3,46 @@
 
 
     
+  <url>
+    <loc>http://yoursite.com/2017/04/13/2017-04-13-teamwork/</loc>
+    <lastmod>2017-04-13T14:17:04.000Z</lastmod>
+    <data>
+        <display>
+        <title>We Build Good Sh*t All Day, Everyday</title>
+        <pubTime>2017-04-13T11:52:24.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="2017年4月" url="http://yoursite.com/categories/2017%E5%B9%B44%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://yoursite.com/2017/03/30/2017-03-30-brew_update/</loc>
+    <lastmod>2017-03-30T10:08:47.000Z</lastmod>
+    <data>
+        <display>
+        <title>让 Homebrew 走代理更新图</title>
+        <pubTime>2017-03-30T11:52:24.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="2017年3月" url="http://yoursite.com/categories/2017%E5%B9%B43%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
     
   <url>
     <loc>http://yoursite.com/2017/02/20/2017-02-20-%E7%B4%A0%E6%9D%90%E7%B1%BB%E7%BD%91%E7%AB%99%E8%AE%BE%E8%AE%A1/</loc>

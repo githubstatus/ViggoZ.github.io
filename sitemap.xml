@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2017/04/13/2017-04-13-teamwork/</loc>
+    
+    <lastmod>2017-04-13T14:17:04.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/03/30/2017-03-30-brew_update/</loc>
+    
+    <lastmod>2017-03-30T10:08:47.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/about/index.html</loc>
     
     <lastmod>2017-03-22T13:05:01.000Z</lastmod>
