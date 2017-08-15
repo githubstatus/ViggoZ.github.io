@@ -3,25 +3,20 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Hexo(1)-生成本地静态博客-Mac | Viggo.Z</title>
+  <title>Android/iOS/Web开发中的动效设计与实现 —— 贝塞尔曲线动画的插值法 | Viggo.Z</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="1. 安装Node.js Hexo 是基于 Node.js 的第三方模块，所以缺少 Node.js 不可。访问 Node.js官网下载Node.js 安装包.我下载的版本是 v5.11.0 Stable。">
+  <meta name="description" content="上篇文章简单总结了一下网页和移动App中动画的实现方法，但是设计师在做好动效之后，准确的给UI开发工程师表述自己所做的动画也是非常重要的一步，这也是决定最终动画实现质量的决定性因素，没有一个完整的标注文档，光靠嘴皮子和研发哥哥交流是很难百分之百做到和自己的动效一致的效果。这里我根据自己做的一个项目小需求简单整理了一下。在解释贝塞尔曲线在设计中的应用的同时，也总结了如何给UI开发工程师交付一份完整、">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo(1)-生成本地静态博客-Mac">
-<meta property="og:url" content="http://yoursite.com/2016/04/22/2016-04-22-Mac-hexo/index.html">
+<meta property="og:title" content="Android/iOS/Web开发中的动效设计与实现 —— 贝塞尔曲线动画的插值法">
+<meta property="og:url" content="http://yoursite.com/2017/08/15/2017-08-15-Bezier/index.html">
 <meta property="og:site_name" content="Viggo.Z">
-<meta property="og:description" content="1. 安装Node.js Hexo 是基于 Node.js 的第三方模块，所以缺少 Node.js 不可。访问 Node.js官网下载Node.js 安装包.我下载的版本是 v5.11.0 Stable。">
-<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/titlehexo.jpg">
-<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/jpg/16-04-22/node.png">
-<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/jpg/16-04-22/git.png">
-<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/jpg/16-04-22/installHexo.png">
-<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/jpg/16-04-22/hexo4000.jpg">
-<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/jpg/16-04-22/newhexo.png">
-<meta property="og:updated_time" content="2016-05-22T11:43:32.000Z">
+<meta property="og:description" content="上篇文章简单总结了一下网页和移动App中动画的实现方法，但是设计师在做好动效之后，准确的给UI开发工程师表述自己所做的动画也是非常重要的一步，这也是决定最终动画实现质量的决定性因素，没有一个完整的标注文档，光靠嘴皮子和研发哥哥交流是很难百分之百做到和自己的动效一致的效果。这里我根据自己做的一个项目小需求简单整理了一下。在解释贝塞尔曲线在设计中的应用的同时，也总结了如何给UI开发工程师交付一份完整、">
+<meta property="og:image" content="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png">
+<meta property="og:updated_time" content="2017-08-15T13:12:56.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo(1)-生成本地静态博客-Mac">
-<meta name="twitter:description" content="1. 安装Node.js Hexo 是基于 Node.js 的第三方模块，所以缺少 Node.js 不可。访问 Node.js官网下载Node.js 安装包.我下载的版本是 v5.11.0 Stable。">
-<meta name="twitter:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/titlehexo.jpg">
+<meta name="twitter:title" content="Android/iOS/Web开发中的动效设计与实现 —— 贝塞尔曲线动画的插值法">
+<meta name="twitter:description" content="上篇文章简单总结了一下网页和移动App中动画的实现方法，但是设计师在做好动效之后，准确的给UI开发工程师表述自己所做的动画也是非常重要的一步，这也是决定最终动画实现质量的决定性因素，没有一个完整的标注文档，光靠嘴皮子和研发哥哥交流是很难百分之百做到和自己的动效一致的效果。这里我根据自己做的一个项目小需求简单整理了一下。在解释贝塞尔曲线在设计中的应用的同时，也总结了如何给UI开发工程师交付一份完整、">
+<meta name="twitter:image" content="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png">
 <meta name="twitter:creator" content="@https://twitter.com/viggo_z">
 <link rel="publisher" href="https://plus.google.com/117797853492180056387">
 <meta property="fb:admins" content="viggoZW">
@@ -148,14 +143,14 @@ ga('send', 'pageview');
   
 </aside>
         
-        <section id="main"><article id="post-2016-04-22-Mac-hexo" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main"><article id="post-2017-08-15-Bezier" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
-    <a href="/2016/04/22/2016-04-22-Mac-hexo/" class="article-date">
-  <time datetime="2016-04-22T03:04:51.000Z" itemprop="datePublished">2016-04-22</time>
+    <a href="/2017/08/15/2017-08-15-Bezier/" class="article-date">
+  <time datetime="2017-08-15T10:52:28.000Z" itemprop="datePublished">2017-08-15</time>
 </a>
     
   <div class="article-category">
-    <a class="article-category-link" href="/categories/2016年4月/">2016年4月</a>
+    <a class="article-category-link" href="/categories/2017年8月/">2017年8月</a>
   </div>
 
   </div>
@@ -166,7 +161,7 @@ ga('send', 'pageview');
         
   
     <h1 class="article-title" itemprop="name">
-      Hexo(1)-生成本地静态博客-Mac
+      Android/iOS/Web开发中的动效设计与实现 —— 贝塞尔曲线动画的插值法
     </h1>
   
 
@@ -174,66 +169,40 @@ ga('send', 'pageview');
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/titlehexo.jpg" alt=""></p>
-<h3 id="1-安装Node-js"><a href="#1-安装Node-js" class="headerlink" title="1. 安装Node.js"></a>1. 安装Node.js</h3><p> Hexo 是基于 Node.js 的第三方模块，所以缺少 Node.js 不可。访问 <a href="http://nodejs.org" target="_blank" rel="external">Node.js官网</a>下载Node.js 安装包.我下载的版本是 v5.11.0 Stable。</p>
+        <p>上篇文章简单总结了一下网页和移动App中动画的实现方法，但是设计师在做好动效之后，准确的给UI开发工程师表述自己所做的动画也是非常重要的一步，这也是决定最终动画实现质量的决定性因素，没有一个完整的标注文档，光靠嘴皮子和研发哥哥交流是很难百分之百做到和自己的动效一致的效果。这里我根据自己做的一个项目小需求简单整理了一下。在解释贝塞尔曲线在设计中的应用的同时，也总结了如何给UI开发工程师交付一份完整、具体、可读性好的动效标注文件。</p>
 <a id="more"></a>
-<p> <img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/jpg/16-04-22/node.png" alt=""></p>
-<hr>
-<h3 id="2-安装Git工具包"><a href="#2-安装Git工具包" class="headerlink" title="2. 安装Git工具包"></a>2. 安装Git工具包</h3><p>之后你需要安装一些 Hexo 的主题和插件，<a href="https://git-scm.com/" target="_blank" rel="external">Git</a> 是最好的下载方式。因为好多主题都被放在了 Github 上，你只需要敲几个字符就可以下载<br> <img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/jpg/16-04-22/git.png" alt=""></p>
-<hr>
-<h3 id="3-安装hexo"><a href="#3-安装hexo" class="headerlink" title="3. 安装hexo"></a>3. 安装hexo</h3><p>打开 Terminal，输入代码：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo npm install -g hexo</span><br></pre></td></tr></table></figure></p>
-<p> <img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/jpg/16-04-22/installHexo.png" alt=""></p>
-<hr>
-<h3 id="4-创建新的hexo博客框架"><a href="#4-创建新的hexo博客框架" class="headerlink" title="4. 创建新的hexo博客框架"></a>4. 创建新的hexo博客框架</h3><p>在桌面上创建文件夹 “hexo”，然后在 Terminal 下输入：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd Desktop/hexo</span><br><span class="line">hexo init /** 创建一个Hexo的新框架 **/</span><br></pre></td></tr></table></figure></p>
-<p>打开桌面的文件夹可看到很多文件</p>
-<hr>
-<h3 id="5-生成一套静态网页"><a href="#5-生成一套静态网页" class="headerlink" title="5. 生成一套静态网页"></a>5. 生成一套静态网页</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate /** 生成一套静态网页 **/</span><br><span class="line">hexo server /** 在服务器上运行 **/</span><br></pre></td></tr></table></figure>
-<p>可简写为：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure></p>
-<p>输入完毕后，使用浏览器进入 <a href="http://localhost:4000/" target="_blank" rel="external">http://localhost:4000/</a><br> <img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/jpg/16-04-22/hexo4000.jpg" alt=""><br>这样就在本地创建了你的静态博客</p>
-<hr>
-<h3 id="6-新建博客文章"><a href="#6-新建博客文章" class="headerlink" title="6. 新建博客文章"></a>6. 新建博客文章</h3><p><strong>注意：</strong>每次退出终端要重新进入Hexo目录才能进行博客操作<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd Desktop/hexo1 /** Hexo1为我创建的博客目录名 **/</span><br><span class="line">hexo new post &quot;2016-04-23-test&quot; /** 创建新的文章 **/</span><br></pre></td></tr></table></figure></p>
-<p> <img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/jpg/16-04-22/newhexo.png" alt=""><br>这个.md文件创建在了 source/_posts/ 的文件下</p>
-<p>你可以选择使用其它编辑器编辑这个 md 文件。推荐使用<a href="https://www.sublimetext.com/" target="_blank" rel="external">Sublime Text</a>，或者直接在终端上编辑，最终要求保存为 UTF-8 的格式（这里不做介绍）。</p>
-<hr>
-<h3 id="7-博客文章默认配置介绍"><a href="#7-博客文章默认配置介绍" class="headerlink" title="7. 博客文章默认配置介绍"></a>7. 博客文章默认配置介绍</h3><p>在md文件里符号“- - -”上面的我们称作 Front-matter，它定义这个md文件的属性，便于 Hexo 生成博客网页时自动配置。</p>
-<blockquote>
+<h2 id="1-关于"><a href="#1-关于" class="headerlink" title="1. 关于"></a>1. 关于</h2><p>动画的曲线实现问题是使用感觉和动画体验的核心。往往设计者给到研发的动效预览视频是不能让研发准确知道动画中元素的运动曲线规则（这个深有体会，研发大哥有可能做出的动画全部是线性运动，实现的动画显得非常生硬）。在主流的动画设计中（After Effect、Origami、Principle、FramerJS），由于动画引擎不同的缘故，导致同样的设计效果不同。不过，其中的贝塞尔插值和函数在开发过程中具有相当的借鉴意义。也能很好的兼容Android/iOS/Web多平台动效的实现。</p>
+<p>首先介绍最重要的两个概念：</p>
 <ul>
-<li>title：定义了博文的标题</li>
-<li>date：定义了创作此博文的时间</li>
-<li>tags：定义了博文的标签</li>
+<li><p><strong>动画（Animation）</strong><br>某个界面控件在一段时间内的变化即产生动画。产生动画的维度可以是它的形状、位置、大小、颜色、透明度等，抑或是它们的叠加。</p>
+</li>
+<li><p><strong>过渡（Transition）</strong><br>那这个控件在两个状态之间是如何变化的呢？定义这个变化的概念即是过渡。不同的过渡曲线会产生截然不同的效果。通常被提到的有ease in、ease out、bounce等，当然Axure也提供这些效果。以位置为例，一个矩形由下至上移动300px，不同的运动曲线所对应的动效之间有非常明显的区别。</p>
+</li>
 </ul>
-</blockquote>
-<p>除了这三个属性以外我们还可以扩展设置一些属性。</p>
-<blockquote>
+<p>在设计过程中，设计者可以获取非常有意义的参数 —— 动画时间、属性变化量、以及贝塞尔插值曲线。在动效标注时，也只需要标注这些参数就可以完整的给UI研发表述动效了。一个动效所涉及的元素属性变化，也就是’动画’在设计输出的效果视频中就可以很明确的表述，而’过渡’使用贝塞尔插值和函数来描述可以说是最有效最直观的方法了。</p>
+<h2 id="2-贝塞尔曲线"><a href="#2-贝塞尔曲线" class="headerlink" title="2. 贝塞尔曲线"></a>2. 贝塞尔曲线</h2><p>贝塞尔的原理可以通过<a href="https://vimeo.com/106757336" target="_blank" rel="external">这个视频</a>来学习</p>
+<p>这里是一些<a href="http://easings.net/zh-cn" target="_blank" rel="external">常用缓动曲线。</a></p>
+<p>在这里我们主要利用贝塞尔曲线描述某元素的缓动效果。设计师在动效制作软件中获取想要的曲线数值<a href="http://cubic-bezier.com/#.25,.1,.25,1" target="_blank" rel="external">✿ cubic-bezier.com</a></p>
 <ul>
-<li>update：定义了最后修改的时间</li>
-<li>comments：定义能否评论此博文（true/false，默认为true）</li>
-<li>categories：定义了博文的种类</li>
+<li>iOS 开发者可以利用 Core Animation 中的代码来实现动画的还原；</li>
+<li>Android开发者(可以使用<a href="http://www.cnblogs.com/benhero/p/4377374.html" target="_blank" rel="external">EaseCubicInterpolator</a>这个开源插值器实现)；</li>
+<li>前端开发者：可以参考google：<a href="https://developers.google.com/web/fundamentals/design-and-ui/animations/custom-easing?hl=zh-cn" target="_blank" rel="external">自定义缓动  |  Web  |  Google Developers</a>可以用这个在线生成工具 <a href="http://www.roblaplaca.com/examples/bezierBuilder/" target="_blank" rel="external">CSS cubic-bezier Builder</a><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">div &#123;</span><br><span class="line">  -webkit-transition: all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94);</span><br><span class="line">  transition:         all 600ms cubic-bezier(0.25, 0.46, 0.45, 0.94); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
 </ul>
-</blockquote>
-<hr>
-<h3 id="8-使用Markdown编写博客内容"><a href="#8-使用Markdown编写博客内容" class="headerlink" title="8. 使用Markdown编写博客内容"></a>8. 使用Markdown编写博客内容</h3><p>在md文件里符号“- - -”下面就可以使用Markdown写博客</p>
-<p>Markdown 比用 HTML 直接书写简单了不少，而 Hexo 的 Markdown 和传统的Markdown 有所不同，下面我们来介绍一下 Markdown 语法。</p>
-<blockquote>
-<ul>
-<li>Markdown 能识别 HTML 书写的语法</li>
-<li>Hexo 的 Markdown 能够识别换行，所以换行时不要求使用<br>标签。</li>
-<li>Markdown 如果不加标签，默认识别为段落。</li>
-</ul>
-</blockquote>
-<p>这里推荐两个Markdown的在线编辑器，能够方便大家迅速生成 Markdown 文件并熟悉 Markdown 的语法</p>
-<p><a href="http://mahua.jser.me/" target="_blank" rel="external">http://mahua.jser.me/</a><br><a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">https://www.zybuluo.com/mdeditor</a></p>
-<p>另外<a href="http://wowubuntu.com/markdown/" target="_blank" rel="external">Markdown</a>的语法说明，这篇介绍得很清楚，大家可以根据自己需要去学习相应的写法。</p>
+<p><em>please have a look at the Sample Project - sample</em></p>
+<p><a href="https://play.google.com/store/apps/details?id=com.g3.news" target="_blank" rel="external"><img alt="Get it on Google Play" src="https://play.google.com/intl/en_us/badges/images/apps/en-play-badge.png" width="185" height="60"></a></p>
+<p>参考：</p>
+<p><a href="https://jeremykun.com/2013/05/11/bezier-curves-and-picasso/" target="_blank" rel="external">Bezier Curves and Picasso | Math ∩ Programming</a><br><a href="http://cubic-bezier.com" target="_blank" rel="external">✿ cubic-bezier.com</a><br><a href="https://www.zhihu.com/question/26838507" target="_blank" rel="external">如何把AE的动效DEMO准确表达给软件工程师？ - 知乎</a><br><a href="http://easings.net/zh-cn" target="_blank" rel="external">缓动函数速查表</a><br><a href="http://www.jianshu.com/p/0688db4f1bcf" target="_blank" rel="external">贝塞尔曲线之购物车动画效果 - 简书</a><br><a href="https://github.com/MartinRGB/MTGuideline" target="_blank" rel="external">MartinRGB/MTGuideline: Some Design Guideline I made.</a></p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2016/04/22/2016-04-22-Mac-hexo/" data-id="cj09m956h002iyptgdqhf0ono" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/08/15/2017-08-15-Bezier/" data-id="cj6dhrqf000002owb9adf904o" class="article-share-link">Share</a>
       
-        <a href="http://yoursite.com/2016/04/22/2016-04-22-Mac-hexo/#disqus_thread" class="article-comment-link">Comments</a>
+        <a href="http://yoursite.com/2017/08/15/2017-08-15-Bezier/#disqus_thread" class="article-comment-link">Comments</a>
       
       
-  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Hexo/">Hexo</a></li></ul>
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML-FED-UI-AE-MotionDesign/">HTML FED UI AE MotionDesign</a></li></ul>
 
     </footer>
   </div>
@@ -241,19 +210,10 @@ ga('send', 'pageview');
     
 <nav id="article-nav">
   
-    <a href="/2016/04/23/2016-04-23-Mac-hexo(2)/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          Hexo(2)-Git托管静态页面-Mac
-        
-      </div>
-    </a>
   
-  
-    <a href="/2016/04/20/2016-04-20-原研哉：为什么设计（2）/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="/2017/08/09/2017-08-09-Bodymovin/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">为什么设计(2)</div>
+      <div class="article-nav-title">用AE + bodymovin制作动画学习记录</div>
     </a>
   
 </nav>
@@ -284,7 +244,7 @@ ga('send', 'pageview');
 <script>
   var disqus_shortname = 'viggoz';
   
-  var disqus_url = 'http://yoursite.com/2016/04/22/2016-04-22-Mac-hexo/';
+  var disqus_url = 'http://yoursite.com/2017/08/15/2017-08-15-Bezier/';
   
   (function(){
     var dsq = document.createElement('script');
