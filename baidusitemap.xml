@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/08/18/2017-08-18-motionMeasurement/</loc>
+    <lastmod>2017-08-18T14:38:26.000Z</lastmod>
+    <data>
+        <display>
+        <title>动效设计中的标注规范 - Motion Measurement</title>
+        <pubTime>2017-08-18T10:52:28.000Z</pubTime>
+        
+        <tag>UI</tag>
+         
+        <tag>AE</tag>
+         
+        <tag>MotionDesign</tag>
+         
+         
+           
+             
+              <breadCrumb title="2017年8月" url="http://yoursite.com/categories/2017%E5%B9%B48%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/08/15/2017-08-15-Bezier/</loc>
     <lastmod>2017-08-18T14:26:13.000Z</lastmod>
     <data>
@@ -26,30 +50,6 @@
         <tag>MotionDesign</tag>
          
         <tag>Bezier</tag>
-         
-         
-           
-             
-              <breadCrumb title="2017年8月" url="http://yoursite.com/categories/2017%E5%B9%B48%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/08/18/2017-08-18-motionMeasurement/</loc>
-    <lastmod>2017-08-18T14:25:02.000Z</lastmod>
-    <data>
-        <display>
-        <title>动效设计中的标注规范 - Motion Measurement</title>
-        <pubTime>2017-08-18T10:52:28.000Z</pubTime>
-        
-        <tag>UI</tag>
-         
-        <tag>AE</tag>
-         
-        <tag>MotionDesign</tag>
          
          
            
