@@ -4,14 +4,28 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/08/15/2017-08-18-motionMeasurement/</loc>
-    <lastmod>2017-08-18T14:20:43.000Z</lastmod>
+    <loc>http://yoursite.com/2017/08/15/2017-08-15-Bezier/</loc>
+    <lastmod>2017-08-18T14:26:13.000Z</lastmod>
     <data>
         <display>
-        <title>动效设计中的标注规范 - Motion Measurement</title>
+        <title>Android/iOS/Web开发中的动效设计与实现 —— 贝塞尔曲线动画的插值法</title>
         <pubTime>2017-08-15T10:52:28.000Z</pubTime>
         
-        <tag>HTML FED UI AE MotionDesign</tag>
+        <tag>FED</tag>
+         
+        <tag>HTML</tag>
+         
+        <tag>Android</tag>
+         
+        <tag>iOS</tag>
+         
+        <tag>UI</tag>
+         
+        <tag>AE</tag>
+         
+        <tag>MotionDesign</tag>
+         
+        <tag>Bezier</tag>
          
          
            
@@ -24,14 +38,18 @@
 
     
   <url>
-    <loc>http://yoursite.com/2017/08/15/2017-08-15-Bezier/</loc>
-    <lastmod>2017-08-18T09:52:07.000Z</lastmod>
+    <loc>http://yoursite.com/2017/08/18/2017-08-18-motionMeasurement/</loc>
+    <lastmod>2017-08-18T14:25:02.000Z</lastmod>
     <data>
         <display>
-        <title>Android/iOS/Web开发中的动效设计与实现 —— 贝塞尔曲线动画的插值法</title>
-        <pubTime>2017-08-15T10:52:28.000Z</pubTime>
+        <title>动效设计中的标注规范 - Motion Measurement</title>
+        <pubTime>2017-08-18T10:52:28.000Z</pubTime>
         
-        <tag>HTML FED UI AE MotionDesign</tag>
+        <tag>UI</tag>
+         
+        <tag>AE</tag>
+         
+        <tag>MotionDesign</tag>
          
          
            
