@@ -4,8 +4,36 @@
 
     
   <url>
+    <loc>http://yoursite.com/2017/08/09/2017-08-09-Bodymovin/</loc>
+    <lastmod>2017-08-18T14:45:16.000Z</lastmod>
+    <data>
+        <display>
+        <title>用AE + bodymovin制作动画</title>
+        <pubTime>2017-08-09T10:52:28.000Z</pubTime>
+        
+        <tag>FED</tag>
+         
+        <tag>HTML</tag>
+         
+        <tag>UI</tag>
+         
+        <tag>AE</tag>
+         
+        <tag>bodymovin</tag>
+         
+         
+           
+             
+              <breadCrumb title="2017年8月" url="http://yoursite.com/categories/2017%E5%B9%B48%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2017/08/18/2017-08-18-motionMeasurement/</loc>
-    <lastmod>2017-08-18T14:38:26.000Z</lastmod>
+    <lastmod>2017-08-18T14:43:09.000Z</lastmod>
     <data>
         <display>
         <title>动效设计中的标注规范 - Motion Measurement</title>
@@ -50,26 +78,6 @@
         <tag>MotionDesign</tag>
          
         <tag>Bezier</tag>
-         
-         
-           
-             
-              <breadCrumb title="2017年8月" url="http://yoursite.com/categories/2017%E5%B9%B48%E6%9C%88/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://yoursite.com/2017/08/09/2017-08-09-Bodymovin/</loc>
-    <lastmod>2017-08-09T11:53:01.000Z</lastmod>
-    <data>
-        <display>
-        <title>用AE + bodymovin制作动画学习记录</title>
-        <pubTime>2017-08-09T10:52:28.000Z</pubTime>
-        
-        <tag>HTML FED UI AE</tag>
          
          
            
