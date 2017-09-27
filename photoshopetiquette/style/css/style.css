@@ -3047,7 +3047,7 @@ header nav {
     z-index: 5000;
     font-family: 'futura-pt 7r', 'futura-pt', 'futura-pt', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 200;
     letter-spacing: 0.05em;
     text-transform: uppercase
 }
@@ -3059,7 +3059,7 @@ header nav {
 
 header nav ul {
     text-align: left;
-    background-color: #f8f0e1
+    background-color: #ffffff
 }
 
 header nav ul li a {
@@ -3133,13 +3133,13 @@ header nav ul li.active a:visited {
 
 header nav ul li:first-child a:link,
 header nav ul li:first-child a:visited {
-    color: #8DC058
+    color: #5e5e5e
 }
 
 header nav ul li:first-child a:hover,
 header nav ul li:first-child a:active {
-    color: #f8f0e1;
-    background-color: #8DC058
+    color: #ffffff;
+    background-color: #87d2ed
 }
 
 header nav ul li:first-child a:focus {
@@ -3148,13 +3148,13 @@ header nav ul li:first-child a:focus {
 
 header nav ul li:nth-child(2) a:link,
 header nav ul li:nth-child(2) a:visited {
-    color: #E9573F
+    color: #5e5e5e
 }
 
 header nav ul li:nth-child(2) a:hover,
 header nav ul li:nth-child(2) a:active {
-    color: #f8f0e1;
-    background-color: #E9573F
+    color: #ffffff;
+    background-color: #87d2ed
 }
 
 header nav ul li:nth-child(2) a:focus {
@@ -3163,13 +3163,13 @@ header nav ul li:nth-child(2) a:focus {
 
 header nav ul li:nth-child(3) a:link,
 header nav ul li:nth-child(3) a:visited {
-    color: #B8A3EF
+    color: #5e5e5e
 }
 
 header nav ul li:nth-child(3) a:hover,
 header nav ul li:nth-child(3) a:active {
-    color: #f8f0e1;
-    background-color: #B8A3EF
+    color: #ffffff;
+    background-color: #87d2ed
 }
 
 header nav ul li:nth-child(3) a:focus {
@@ -3178,13 +3178,13 @@ header nav ul li:nth-child(3) a:focus {
 
 header nav ul li:nth-child(4) a:link,
 header nav ul li:nth-child(4) a:visited {
-    color: #3fbb9b
+    color: #5e5e5e
 }
 
 header nav ul li:nth-child(4) a:hover,
 header nav ul li:nth-child(4) a:active {
-    color: #f8f0e1;
-    background-color: #3fbb9b
+    color: #ffffff;
+    background-color: #87d2ed
 }
 
 header nav ul li:nth-child(4) a:focus {
@@ -3193,13 +3193,13 @@ header nav ul li:nth-child(4) a:focus {
 
 header nav ul li:nth-child(5) a:link,
 header nav ul li:nth-child(5) a:visited {
-    color: #538ED4
+    color: #5e5e5e
 }
 
 header nav ul li:nth-child(5) a:hover,
 header nav ul li:nth-child(5) a:active {
-    color: #f8f0e1;
-    background-color: #538ED4
+    color: #ffffff;
+    background-color: #87d2ed
 }
 
 header nav ul li:nth-child(5) a:focus {
@@ -3208,13 +3208,13 @@ header nav ul li:nth-child(5) a:focus {
 
 header nav ul li:nth-child(6) a:link,
 header nav ul li:nth-child(6) a:visited {
-    color: #EB5767
+    color: #5e5e5e
 }
 
 header nav ul li:nth-child(6) a:hover,
 header nav ul li:nth-child(6) a:active {
-    color: #f8f0e1;
-    background-color: #EB5767
+    color: #ffffff;
+    background-color: #87d2ed
 }
 
 header nav ul li:nth-child(6) a:focus {
@@ -3243,18 +3243,18 @@ header nav ul li:nth-child(6) a:focus {
         *vertical-align: auto;
         *zoom: 1;
         *display: inline;
-        font-size: .7em;
+        font-size: 1em;
         line-height: 1;
         padding: 1.42857143em 1.42857143em 1.42857143em 0;
         text-transform: uppercase
     }
     header nav ul li a:link,
     header nav ul li a:visited {
-        color: #f8f0e1 !important
+        color: #ffffff !important
     }
     header nav ul li a:hover,
     header nav ul li a:active {
-        color: #F4BA4E !important
+        color: #ddd !important
     }
     header nav ul li:first-child a:link,
     header nav ul li:first-child a:visited,
@@ -3350,8 +3350,8 @@ footer nav ul li a {
     font-size: .9em;
     line-height: 1.22222222;
     padding: .5em .5em .35em;
-    background-color: #2da6d4;
-    background-color: #2da6d4
+    background-color: #42afd8;
+    background-color: #42afd8
 }
 
 .topic-color-blue footer nav ul li a {
@@ -3392,7 +3392,7 @@ footer nav ul li a:hover,
 footer nav ul li a:active {
     outline: 0;
     text-decoration: none;
-    color: #F4BA4E
+    color: #fff
 }
 
 footer nav ul li a:focus {
@@ -6835,7 +6835,7 @@ html.no-csstransforms .page-home .bg-hero:after {
 @media only screen and (min-width: 46.875em) {
     .page-detail div.main-container {
         padding-top: 5.5em;
-        padding-bottom: 1em
+        padding-bottom: 10em
     }
 }
 
@@ -6884,6 +6884,9 @@ html.no-csstransforms .page-home .bg-hero:after {
         page-break-after: avoid
     }
 }
+
+
+
 .box2 {
             border-radius: 4px;
             width: 300px;
@@ -6910,5 +6913,51 @@ html.no-csstransforms .page-home .bg-hero:after {
             -o-transition: all 0.3s ease;
             transition: all 0.3s ease;
         }
+@media only screen and (min-width: 15em) {
+    .box2 {
+        width: 100%;
+    }
+}
 
+
+.static{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .1em;
+    display: block;
+    position: relative;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    border: 3px solid #fff;
+    width: 290px;
+    z-index: 2;
+}
+.static:hover,
+.static:active{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: .1em;
+    display: block;
+    position: relative;
+    color: #42afd8;
+    font-size: 18px;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 50px;
+    border: 3px solid #fff;
+    width: 290px;
+    z-index: 2;
+    background-color: #fff;
+}
+.logo2{
+    display: inline-block;
+    padding: 0px 10px 50px 10px;
+
+}
+.center{
+    text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
