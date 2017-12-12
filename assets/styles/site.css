@@ -511,6 +511,12 @@ body {
     z-index: 10
 }
 
+@media (max-width: 580px) {
+    #profile {
+        background-image: none;
+    }
+}
+
 #profile-1 {
     background-image: url(../images/profile-1.png);
     background-position: center center;
@@ -668,6 +674,14 @@ header.main nav {
     justify-content: flex-end;
     margin-left: 2rem;
     font-size: 1.1rem;
+}
+
+@media (max-width: 580px) {
+    header.main nav {
+        justify-content: flex-start;
+        margin-left: 0rem;
+
+        }
 }
 
 header.main nav a {
