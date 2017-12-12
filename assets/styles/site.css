@@ -421,7 +421,7 @@ body {
 #about {
     width: 40%;
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 10%;
     z-index: 20;
     transform: translate(0, -50%);
