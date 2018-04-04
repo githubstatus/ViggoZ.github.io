@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>http://yoursite.com/2018/01/15/2018-01-15-design-tools/</loc>
+    <lastmod>2018-04-04T15:14:25.000Z</lastmod>
+    <data>
+        <display>
+        <title>今天来谈谈设计工具</title>
+        <pubTime>2018-01-15T12:52:28.000Z</pubTime>
+        
+        <tag>UE</tag>
+         
+        <tag>UI</tag>
+         
+        <tag>Design tools</tag>
+         
+         
+           
+             
+              <breadCrumb title="2018年1月" url="http://yoursite.com/categories/2018%E5%B9%B41%E6%9C%88/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://yoursite.com/2018/01/03/2018-01-03-webstack/</loc>
     <lastmod>2018-01-08T11:11:33.000Z</lastmod>
     <data>
@@ -83,15 +107,15 @@
          
         <tag>HTML</tag>
          
-        <tag>Android</tag>
-         
-        <tag>iOS</tag>
-         
         <tag>UI</tag>
          
         <tag>AE</tag>
          
         <tag>MotionDesign</tag>
+         
+        <tag>Android</tag>
+         
+        <tag>iOS</tag>
          
         <tag>Bezier</tag>
          
