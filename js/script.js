@@ -1,65 +1,35 @@
 (function($){
+  // Search
+  var $searchWrap = $('#search-form-wrap'),
+    isSearchAnim = false,
+    searchAnimDuration = 200;
 
-  // Caption
-  $('.article-entry').each(function(i){
-    $(this).find('img').each(function(){
-      if ($(this).parent().hasClass('fancybox')) return;
+  var startSearchAnim = function(){
+    isSearchAnim = true;
+  };
 
-      var alt = this.alt;
+  var stopSearchAnim = function(callback){
+    setTimeout(function(){
+      isSearchAnim = false;
+      callback && callback();
+    }, searchAnimDuration);
+  };
 
-      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+  $('#nav-search-btn').on('click', function(){
+    if (isSearchAnim) return;
 
-      $(this).wrap('<a href="' + $(this).attr('src') + '" title="' + alt + '" class="fancybox"></a>');
-    });
-
-    $(this).find('.fancybox').each(function(){
-      $(this).attr('rel', 'article' + i);
+    startSearchAnim();
+    $searchWrap.addClass('on');
+    stopSearchAnim(function(){
+      $('.search-form-input').focus();
     });
   });
 
-  if ($.fancybox){
-    $('.fancybox').fancybox();
-  }
-
-  //Remove search input icon
-  $('input[type=search]').removeAttr('results');
-
-  function startWindowAnim(){
-    $('#header').addClass('open');
-    $('#wrap > .outer').addClass('open');
-    $('#footer').addClass('open');
-  }
-
-  //Set image scrollLoading
-  $('.article-entry img').each(function() {
-    $(this).attr('data-url', $(this).attr('src'));
-    $(this).removeAttr('src');
-    $(this).addClass('scrollLoading');
-    $(this).wrap('<div class="img-wrap"></div>');
+  $('.search-form-input').on('blur', function(){
+    startSearchAnim();
+    $searchWrap.removeClass('on');
+    stopSearchAnim();
   });
-
-  var imgCount,
-      timer = setInterval(function () {
-        if(imgCount <= 0)
-          clearInterval(timer);
-        isLoaded();
-      }, 500);
-
-  var isLoaded = function () {
-    $('.scrollLoading').each(function (i, img) {
-      if($(this).height() > 0 && $(this).parents('.img-wrap').length) {
-        if($(this).parent().hasClass('img-wrap'))
-          $(this).unwrap();
-        else
-          $(this).parent().unwrap();
-      }
-    });
-    imgCount = $('.img-wrap').length;
-  }
-
-  $('.scrollLoading').scrollLoading();
-
-  setTimeout(startWindowAnim, 1);
 
   // Share
   $('body').on('click', function(){
@@ -115,20 +85,53 @@
     window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
   });
 
-  //Open search box
-  $('#nav-search-btn').on('click', function(){
-    $('#search-form-wrap').toggleClass('on');
-    $('#main-nav').toggleClass('off');
+  // Caption
+  $('.article-entry').each(function(i){
+    $(this).find('img').each(function(){
+      if ($(this).parent().hasClass('fancybox')) return;
+
+      var alt = this.alt;
+
+      if (alt) $(this).after('<span class="caption">' + alt + '</span>');
+
+      $(this).wrap('<a href="' + this.src + '" title="' + alt + '" class="fancybox"></a>');
+    });
+
+    $(this).find('.fancybox').each(function(){
+      $(this).attr('rel', 'article' + i);
+    });
   });
-  //When click other element. close search box
-  $("#wrap > .outer").on('click', function(){
-    $('#search-form-wrap').removeClass('on');
-    $('#main-nav').removeClass('off');
-  });
+
+  if ($.fancybox){
+    $('.fancybox').fancybox();
+  }
 
   // Mobile nav
+  var $container = $('#container'),
+    isMobileNavAnim = false,
+    mobileNavAnimDuration = 200;
+
+  var startMobileNavAnim = function(){
+    isMobileNavAnim = true;
+  };
+
+  var stopMobileNavAnim = function(){
+    setTimeout(function(){
+      isMobileNavAnim = false;
+    }, mobileNavAnimDuration);
+  }
+
   $('#main-nav-toggle').on('click', function(){
-    $('#mobile-nav').toggleClass('off');
+    if (isMobileNavAnim) return;
+
+    startMobileNavAnim();
+    $container.toggleClass('mobile-nav-on');
+    stopMobileNavAnim();
   });
 
+  $('#wrap').on('click', function(){
+    if (isMobileNavAnim || !$container.hasClass('mobile-nav-on')) return;
+
+    $container.removeClass('mobile-nav-on');
+  });
 })(jQuery);

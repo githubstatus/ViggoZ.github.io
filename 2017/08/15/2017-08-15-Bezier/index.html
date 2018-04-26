@@ -1,20 +1,310 @@
-extends partial/layout.pug
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Android/iOS/Web开发中的动效设计与实现 —— 贝塞尔曲线动画的插值法 | Viggo.Z</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="上篇文章简单总结了一下网页和移动App中借助bodymovin实现动画的方法，但是此方法并不是适用实际项目中的所有动效，很多动效还是需要设计师制作效果视频，交给研发宝宝手动去做，本文主要简单讲一下贝塞尔曲线在动效设计与实现中的作用。">
+<meta name="keywords" content="FED,HTML,UI,AE,MotionDesign,Android,iOS,Bezier">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Android&#x2F;iOS&#x2F;Web开发中的动效设计与实现 —— 贝塞尔曲线动画的插值法">
+<meta property="og:url" content="http://viggoz.com/2017/08/15/2017-08-15-Bezier/index.html">
+<meta property="og:site_name" content="Viggo.Z">
+<meta property="og:description" content="上篇文章简单总结了一下网页和移动App中借助bodymovin实现动画的方法，但是此方法并不是适用实际项目中的所有动效，很多动效还是需要设计师制作效果视频，交给研发宝宝手动去做，本文主要简单讲一下贝塞尔曲线在动效设计与实现中的作用。">
+<meta property="og:locale" content="default">
+<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/new_guide_motion-800.gif">
+<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/Natural_01_Easing-v1-1.gif">
+<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/BezierPoint2.gif">
+<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/BezierPoint3.gif">
+<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/BezierPoint4.gif">
+<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/BezierPoint5.gif">
+<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/BezierPoint6.gif">
+<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/CubicBezierTools.png">
+<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/02.png">
+<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/preview_5_motion.gif">
+<meta property="og:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/landing_page_motion_principle.png">
+<meta property="og:updated_time" content="2017-08-22T12:08:48.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Android&#x2F;iOS&#x2F;Web开发中的动效设计与实现 —— 贝塞尔曲线动画的插值法">
+<meta name="twitter:description" content="上篇文章简单总结了一下网页和移动App中借助bodymovin实现动画的方法，但是此方法并不是适用实际项目中的所有动效，很多动效还是需要设计师制作效果视频，交给研发宝宝手动去做，本文主要简单讲一下贝塞尔曲线在动效设计与实现中的作用。">
+<meta name="twitter:image" content="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/new_guide_motion-800.gif">
+  
+    <link rel="alternate" href="/atom.xml" title="Viggo.Z" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
 
-block site_title
-    != page.title + ' • ' + config.title
+</head>
 
-block description
-    - var desc = page.desc || page.title + ' - ' + config.author;
-    meta(name='description', content=desc)
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Viggo.Z</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://viggoz.com"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-2017-08-15-Bezier" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2017/08/15/2017-08-15-Bezier/" class="article-date">
+  <time datetime="2017-08-15T10:52:28.000Z" itemprop="datePublished">2017-08-15</time>
+</a>
+    
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/2017年8月/">2017年8月</a>
+  </div>
 
-block container
-    include mixins/post.pug
-    +post(page)
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Android/iOS/Web开发中的动效设计与实现 —— 贝塞尔曲线动画的插值法
+    </h1>
+  
 
-block pagination
-    include mixins/paginator.pug
-    +post()
-    include partial/comment.pug
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p><a href="http://viggoz.com/2017/08/09/2017-08-09-Bodymovin/" target="_blank" rel="noopener">上篇文章</a>简单总结了一下网页和移动App中借助bodymovin实现动画的方法，但是此方法并不是适用实际项目中的所有动效，很多动效还是需要设计师制作效果视频，交给研发宝宝手动去做，本文主要简单讲一下贝塞尔曲线在动效设计与实现中的作用。<br><a id="more"></a></p>
+<h2 id="1-关于"><a href="#1-关于" class="headerlink" title="1. 关于"></a>1. 关于</h2><p>首先介绍最重要的两个概念：</p>
+<ul>
+<li><strong>动画（Animation）</strong><br>某个界面控件在一段时间内的变化即产生动画。产生动画的维度可以是它的形状、位置、大小、颜色、透明度等，抑或是它们的叠加。</li>
+</ul>
+<p>下面这个是我做的一个非常简单的应用开屏引导动画，滑动时候是元素位移透明度变化。<br><img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/new_guide_motion-800.gif" alt=""></p>
+<ul>
+<li><strong>过渡（Transition）</strong><br>那这个控件在两个状态之间是如何变化的呢？定义这个变化的概念即是过渡。不同的过渡曲线会产生截然不同的效果。通常被提到的有ease in、ease out、bounce等，当然Axure也提供这些效果。以位置为例，一个矩形由下至上移动300px，不同的运动曲线所对应的动效之间有非常明显的区别。</li>
+</ul>
+<p>下面借助<a href="https://material.io/guidelines/motion/duration-easing.html#duration-easing-natural-easing-curves" target="_blank" rel="noopener">Google的MD规范动画</a>解释过渡的作用。<br><img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/Natural_01_Easing-v1-1.gif" alt=""></p>
+<p>一个动画一般有这些参数 —— 动画时间、属性变化量、以及贝塞尔插值曲线。在动效标注的时候，也只需要标注这些参数就可以完整的给UI研发写动效了。一个动效所涉及的元素属性变化，也就是’动画’在设计输出的效果视频中就可以很明确的表述，而’过渡’使用贝塞尔插值和函数来描述可以说是最有效最直观的方法了。</p>
+<h2 id="2-贝塞尔曲线"><a href="#2-贝塞尔曲线" class="headerlink" title="2. 贝塞尔曲线"></a>2. 贝塞尔曲线</h2><p>一阶贝塞尔曲线（两点），绘制成一条直线<br><img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/BezierPoint2.gif" alt=""><br>二阶贝塞尔曲线（三点）<br><img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/BezierPoint3.gif" alt=""><br>三阶贝塞尔曲线（四点）<br><img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/BezierPoint4.gif" alt=""><br>四阶贝塞尔曲线（五点）<br><img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/BezierPoint5.gif" alt=""><br>五阶贝塞尔曲线（六点）<br><img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/BezierPoint6.gif" alt=""></p>
+<p>贝塞尔的原理可以通过<a href="https://vimeo.com/106757336" target="_blank" rel="noopener">这个视频</a>来学习<br>也可以看看这个<a href="http://www.html-js.com/article/1628" target="_blank" rel="noopener">贝塞尔曲线扫盲</a></p>
+<h2 id="3-贝塞尔函数曲线怎么用"><a href="#3-贝塞尔函数曲线怎么用" class="headerlink" title="3. 贝塞尔函数曲线怎么用"></a>3. 贝塞尔函数曲线怎么用</h2><h3 id="设计师怎么用"><a href="#设计师怎么用" class="headerlink" title="设计师怎么用"></a>设计师怎么用</h3><p>动画的曲线实现问题是使用感觉和动画体验的核心。往往设计者给到研发的动效预览视频是不能让研发准确知道动画中元素的运动曲线规则（这个深有体会，研发大哥有可能做出的动画全部是线性运动，实现的动画显得非常生硬）。在主流的动画设计中（After Effect、Origami、Principle、FramerJS），由于动画引擎不同的缘故，导致同样的设计效果不同。不过，其中的贝塞尔插值和函数在开发过程中具有相当的借鉴意义。也能很好的兼容Android/iOS/Web多平台动效的实现。</p>
+<p><strong>设计师</strong> 做好动效之后，只需要把在制作动画时使用的贝塞尔插值曲线参数值交给研发宝宝就可以。我在标注动效的时候会标注不同元素在不同时间所对应的动画运动曲线参数。<br><img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/CubicBezierTools.png" alt=""></p>
+<p>这里是开源的一些<a href="http://easings.net/zh-cn" target="_blank" rel="noopener">常用缓动曲线，</a>前端同学可以直接拿来用，在一些网页动画中可以直接加入这些<strong>缓动函数</strong>。动画效果在执行时的速度，使其看起来更加真实。<br><img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/02.png" alt=""></p>
+<p>下面这个是我做的一个简单的动画，渐变效果加上缓动函数看上去会自然很多。</p>
+<p><img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/preview_5_motion.gif" alt=""><br>上面的开屏引导动画使用principle做的，基本使用默认的贝塞尔的缓入缓出曲线(25,.1,.25,1)，看上去才会非常自然。<br><img src="http://7xnb6x.com1.z0.glb.clouddn.com/image/17-08-15-Bezier/landing_page_motion_principle.png" alt=""><br>在这里我们主要利用贝塞尔曲线描述某元素的缓动效果。设计师在动效制作软件中获取想要的曲线数值<a href="http://cubic-bezier.com/#.25,.1,.25,1" target="_blank" rel="noopener">✿ cubic-bezier.com</a></p>
+<p>###研发宝宝怎么用</p>
+<ul>
+<li><strong>Android开发者</strong> </li>
+</ul>
+<p>可以使用<a href="http://www.cnblogs.com/benhero/p/4377374.html" target="_blank" rel="noopener">EaseCubicInterpolator</a>这个开源插值器实现；我司研发宝宝亲测可用；</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">findViewById(R.id.imageView).setY(1200);</span><br><span class="line">findViewById(R.id.imageView).animate().setInterpolator(new android.view.animation.EaseCubicInterpolator(0f,1.5f,0.53f,0.02f)).yBy(-900).setDuration(500).start();</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>前端开发者</strong></li>
+</ul>
+<p>可以参考google：<a href="https://developers.google.com/web/fundamentals/design-and-ui/animations/custom-easing?hl=zh-cn" target="_blank" rel="noopener">自定义缓动  |  Web  |  Google Developers</a></p>
+<p><a href="https://isux.tencent.com/native-animation.html" target="_blank" rel="noopener">如何让你的动画更自然</a> 腾讯ISUX写的这篇文章主要讲述的是前端使用曲线的方法，写的过于繁琐，全篇不用细看，只需要参考使用js、css实现曲线动画效果部分就可以，</p>
+<p>如果不想重复造轮子的话，可以使用动画曲线实现库<a href="https://github.com/shrekshrek/jstween" target="_blank" rel="noopener">jstween</a>和<a href="http://greensock.com/ease-visualizer" target="_blank" rel="noopener">GreenSock</a>。两个库都是挺容易上手使用的，而且还扩展了很多功能，例如按运动曲线同时改变多个属性、动画播放时或完成时执行回调函数等。</p>
+<p>可以用这个在线生成工具也是可以用的 <a href="http://www.roblaplaca.com/examples/bezierBuilder/" target="_blank" rel="noopener">CSS cubic-bezier Builder</a><br>示例代码：</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">div</span> &#123;</span><br><span class="line">  <span class="attribute">-webkit-transition</span>: all <span class="number">600ms</span> <span class="built_in">cubic-bezier</span>(0.25, 0.46, 0.45, 0.94);</span><br><span class="line">  <span class="attribute">transition</span>:         all <span class="number">600ms</span> <span class="built_in">cubic-bezier</span>(0.25, 0.46, 0.45, 0.94); </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>iOS开发者</strong> </li>
+</ul>
+<p>可以利用 Core Animation 中的代码来实现动画的还原，本人没有仔细研究，请左转<a href="www.baidu.com">百度</a>右转<a href="www.google.com">Google</a>搜索；</p>
+<p>下一篇文章我会写关于设计师怎么产出一份 <strong>动效标注文档</strong> ，方便研发宝宝更直观的理解设计师做的动画。</p>
+<p><strong>注：本文转载请注明原文地址：</strong><a href="http://viggoz.com/2017/08/15/2017-08-15-Bezier/" target="_blank" rel="noopener">http://viggoz.com/2017/08/15/2017-08-18-Bezier/</a></p>
+<p>本文参考：</p>
+<p><a href="https://jeremykun.com/2013/05/11/bezier-curves-and-picasso/" target="_blank" rel="noopener">Bezier Curves and Picasso | Math ∩ Programming</a><br><a href="http://cubic-bezier.com" target="_blank" rel="noopener">✿ cubic-bezier.com</a><br><a href="https://www.zhihu.com/question/26838507" target="_blank" rel="noopener">如何把AE的动效DEMO准确表达给软件工程师？ - 知乎</a><br><a href="http://easings.net/zh-cn" target="_blank" rel="noopener">缓动函数速查表</a><br><a href="http://www.jianshu.com/p/0688db4f1bcf" target="_blank" rel="noopener">贝塞尔曲线之购物车动画效果 - 简书</a><br><a href="https://github.com/MartinRGB/MTGuideline" target="_blank" rel="noopener">MartinRGB/MTGuideline: Some Design Guideline I made.</a></p>
 
-block copyright
-    include partial/copyright.pug
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://viggoz.com/2017/08/15/2017-08-15-Bezier/" data-id="cjfl6in4l0060lify2jpshj56" class="article-share-link">Share</a>
+      
+        <a href="http://viggoz.com/2017/08/15/2017-08-15-Bezier/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/AE/">AE</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Bezier/">Bezier</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/FED/">FED</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/HTML/">HTML</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MotionDesign/">MotionDesign</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/UI/">UI</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iOS/">iOS</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/08/18/2017-08-18-motionMeasurement/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          动效设计中的标注规范 - Motion Measurement
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/08/09/2017-08-09-Bodymovin/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">用AE + bodymovin制作动画</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+        
+          <aside id="sidebar">
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/2015年10月/">2015年10月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2015年11月/">2015年11月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2015年12月/">2015年12月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2015年5月/">2015年5月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2015年6月/">2015年6月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2015年9月/">2015年9月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2016年11月/">2016年11月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2016年12月/">2016年12月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2016年1月/">2016年1月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2016年3月/">2016年3月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2016年4月/">2016年4月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2016年5月/">2016年5月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2016年6月/">2016年6月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2017年2月/">2017年2月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2017年3月/">2017年3月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2017年4月/">2017年4月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2017年8月/">2017年8月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2018年1月/">2018年1月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2018年2月/">2018年2月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2018年3月/">2018年3月</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/2018年4月/">2018年4月</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/AE/">AE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Android/">Android</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Bezier/">Bezier</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Design-tools/">Design tools</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Designer/">Designer</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/FED/">FED</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/HTML/">HTML</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Hexo/">Hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/LOGO/">LOGO</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Mac/">Mac</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Management/">Management</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/MotionDesign/">MotionDesign</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Music/">Music</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Photo/">Photo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Reading/">Reading</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Sunlime-text/">Sunlime text</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UE/">UE</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UI/">UI</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/UX/">UX</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/VIS/">VIS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/Writing/">Writing</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/bodymovin/">bodymovin</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/design/">design</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/iOS/">iOS</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/music/">music</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/photo/">photo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/vpn/">vpn</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/web-design/">web design</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/AE/" style="font-size: 13.33px;">AE</a> <a href="/tags/Android/" style="font-size: 10px;">Android</a> <a href="/tags/Bezier/" style="font-size: 10px;">Bezier</a> <a href="/tags/Design-tools/" style="font-size: 10px;">Design tools</a> <a href="/tags/Designer/" style="font-size: 10px;">Designer</a> <a href="/tags/FED/" style="font-size: 13.33px;">FED</a> <a href="/tags/HTML/" style="font-size: 13.33px;">HTML</a> <a href="/tags/Hexo/" style="font-size: 16.67px;">Hexo</a> <a href="/tags/LOGO/" style="font-size: 10px;">LOGO</a> <a href="/tags/Mac/" style="font-size: 10px;">Mac</a> <a href="/tags/Management/" style="font-size: 10px;">Management</a> <a href="/tags/MotionDesign/" style="font-size: 11.67px;">MotionDesign</a> <a href="/tags/Music/" style="font-size: 11.67px;">Music</a> <a href="/tags/Photo/" style="font-size: 20px;">Photo</a> <a href="/tags/Reading/" style="font-size: 13.33px;">Reading</a> <a href="/tags/Sunlime-text/" style="font-size: 10px;">Sunlime text</a> <a href="/tags/UE/" style="font-size: 16.67px;">UE</a> <a href="/tags/UI/" style="font-size: 18.33px;">UI</a> <a href="/tags/UX/" style="font-size: 13.33px;">UX</a> <a href="/tags/VIS/" style="font-size: 15px;">VIS</a> <a href="/tags/Writing/" style="font-size: 15px;">Writing</a> <a href="/tags/bodymovin/" style="font-size: 10px;">bodymovin</a> <a href="/tags/design/" style="font-size: 18.33px;">design</a> <a href="/tags/iOS/" style="font-size: 10px;">iOS</a> <a href="/tags/music/" style="font-size: 11.67px;">music</a> <a href="/tags/photo/" style="font-size: 13.33px;">photo</a> <a href="/tags/vpn/" style="font-size: 10px;">vpn</a> <a href="/tags/web-design/" style="font-size: 10px;">web design</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/04/">April 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">February 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/04/">April 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/03/">March 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/02/">February 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/12/">December 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/11/">November 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/09/">September 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">July 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">June 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">May 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/04/">April 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/03/">March 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/01/">January 2016</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/12/">December 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/09/">September 2015</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/06/">June 2015</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/04/16/2018-04-16-photo/">关于我的博客摄影作品板块</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/04/2018-03-04-Q&A/">关于前端和设计Q&amp;A</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/03/2018-03-03-Camera/">My Camera Nikon D750</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/24/2018-02-24-music/">这里是我的听歌排行榜</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/15/2018-01-15-design-tools/">今天来聊聊2018年的设计工具</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2018 Viggo.Z<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'viggoz';
+  
+  var disqus_url = 'http://viggoz.com/2017/08/15/2017-08-15-Bezier/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+  </div>
+</body>
+</html>
