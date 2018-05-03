@@ -649,7 +649,7 @@ header.main {
     max-width: 96rem;
     width: 90%;
     margin: 0 auto 1em;
-    padding: 2rem 0 2rem;
+    padding: 4rem 0 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -685,6 +685,8 @@ header.main nav {
 }
 
 header.main nav a {
+    font-family: 'Open Sans', "Microsoft Yahei";
+        font-size: 0.9rem;
     color: #666;
     font-weight: 600;
     letter-spacing: 1px;
@@ -702,6 +704,6 @@ header.main nav a.active {
         font-size: 1.5 rem;
     }
     header.main nav a {
-        margin: 0 2rem;
+        margin: 0 0.8rem;
     }
 }
